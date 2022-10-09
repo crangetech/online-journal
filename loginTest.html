@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Journal</title>
+</head>
+
+<body>
+  <center>
+    <h1>
+      <header>Online Journal Login</header>
+    </h1>
+    <form id="login_form">
+      <label>Username</label> </br><input type="text" name="username" id="username"></br>
+      <label>Password</label></br> <input type="password" name="password" id="password"></br></br>
+      <button type="submit" id="loginbutton">Login</button>
+    </form>
+  </center>
+  <script>
+    var loginBtn = document.getElementById("loginbutton")
+    loginBtn.addEventListener("click", (e)=>{
+      e.preventDefault()
+      var username = document.getElementById("username").value
+      var password = document.getElementById("password").value
+      console.log(username)
+      console.log(password)
+      fetch('./api/login', {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + this.token
+        },
+        body: JSON.stringify({
+          email: username,
+          password: password
+        })
+      }).then((response) => response.json())
+        .then((responseData) => {
+          if(responseData.msg === "Logged in!"){
+            window.location = './onlineEntry.html'
+          }
+          console.log(responseData);
+        })
+    })
+
+  </script>
+</body>
+
+</html>
