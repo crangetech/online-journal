@@ -1,4 +1,5 @@
 .nav div {
+<<<<<<< HEAD
 height: 4px;
 background-color: white;
 margin: 5px 0;
@@ -26,3 +27,33 @@ transition: 0.3s;
 body {
     background-color: grey;
 }
+=======
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s;
+    }
+    .nav {
+        width: 30px;
+        display: block;
+        margin: 1em 0 0 1em;
+    
+    }
+    .one {
+        width: 30px;
+    }
+    .two {
+        width: 20px;
+    }
+    .three {
+        width: 25px;
+    }
+    .nav:hover div {
+        width: 30px;
+    }
+    body {
+        background-color: grey;
+    }
+    
+>>>>>>> guy
