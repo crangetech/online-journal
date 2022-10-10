@@ -1,3 +1,92 @@
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    cursor: pointer;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.logo h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.nav-bar {
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+
+}
+
+.nav-bar li a {
+    color: white;
+}
+
+.nav-bar li a:hover {
+    color: black;
+}
+
+.hero-img {
+    background-image: url("./images/daily-journal.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 800 px;
+    height: 900px;
+    background-size: 100% auto;
+    overflow: hidden;
+
+}
+
+.dl {
+    text-align: center;
+}
+
+.nav div {
+height: 4px;
+background-color: white;
+margin: 5px 0;
+border-radius: 25px;
+transition: 0.3s;
+}
+.nav {
+    width: 30px;
+    display: block;
+    margin: 1em 0 0 1em;
+
+}
+
+.one {
+    width: 30px;
+}
+.two {
+    width: 20px;
+}
+.three {
+    width: 25px;
+}
+.nav:hover div {
+    width: 30px;
+}
+body {
+    background-color: grey;
+}
+
+
 .nav div {
 height: 4px;
 background-color: white;
