@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
     <div class="header">
         
     <a href="#" class="nav">
@@ -17,14 +18,29 @@
             <div class="three"></div>
         </a>
 
+        <h1 class="entry-title">Daily Journal</h1>
+
+        <p>Welcome to your Daily Journal Dashboard!</p>
+
         <button class="entry-button" type="button">New Entry
         </button>
 
         <button class="entry-button" type="button">View All Entries
         </button>
-
-        <button class="entry-button" type="button">Save Now
+        
+        <button class="entry-button" type="button">Logout
         </button>
+
+        <br><br>
+
+
+        <form id="entry-form">
+            <label for="title">Post Title:</label>
+            <input type="text" name="title" id="title" class="form-input" /><br>
+            <label for="message">Enter your message:</label><br>
+            <textarea name="Message" rows="10" cols="80"></textarea>
+          <br><button >Post</button><br><br>
+        </form>
 
     </div>
 
@@ -34,8 +50,8 @@
         <div class="resource-list">
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./terms.html">Terms</a></li>
-                <li><a href="./policy.html">Policy</a></li>
+                <li><a href="./terms-conditions.html">Terms & Conditions</a></li>
+                <li><a href="./privacy-policy.html">Privacy Policy</a></li>
                 <li><a href="./support.html">Support</a></li>
             </ul>
 
