@@ -1,0 +1,21 @@
+{
+  "name": "online-journal",
+  "version": "1.0.0",
+  "description": "An online journal for keeping track of your daily thoughts with easy access to look back at your old entries.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crangel93/online-journal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crangel93/online-journal/issues"
+  },
+  "homepage": "https://github.com/crangel93/online-journal#readme"
+}
