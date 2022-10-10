@@ -1,32 +1,3 @@
-const path = require("path");
-const express = require("express");
-const session = require("express-session");
-
-const app = express();
-const PORT = process.env.PORT || 3001;
-
-const sequelize = require("./config/connection");
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
-const sess = {
-  secret: "Super secret secret",
-  cookie: {},
-  resave: false,
-  saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize
-  })
-};
-
-app.use(session(sess));
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "public")));
-
-// app.use(require('./controllers/'));
-
-
 const createError=require('http-errors');
 const express=require('express');
 const path=require('path');
@@ -34,6 +5,8 @@ const bodyParser=require('body-parser');
 const cors=require('cors');
 const indexRouter=require('./Router.js');
 
+
+const app=express();
 
 app.use(express.json());
 
@@ -70,9 +43,4 @@ app.use((err,req,res,next)=>{
 
 });
 
-// app.listen(3000,()=>console.log('Server is running on port 3000'));
-
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}!`);
-  sequelize.sync({ force: false });
-});
+app.listen(3000,()=>console.log('Server is running on port 3000'));
