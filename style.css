@@ -1,3 +1,10 @@
+* {
+     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -11,14 +18,16 @@ header {
 
 .logo {
     cursor: pointer;
+    margin: auto;
+    
+    border: 3px;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .logo h1 {
     font-size: 25px;
-    text-align: center;
+    
 }
 
 .nav-bar {
@@ -86,37 +95,15 @@ body {
     background-color: grey;
 }
 
+main form button {
+    color:#393D3F ;
+    border:#62929E ;
+    text-decoration: none;
+
+}
+
 
 .nav div {
-<<<<<<< HEAD
-height: 4px;
-background-color: white;
-margin: 5px 0;
-border-radius: 25px;
-transition: 0.3s;
-}
-.nav {
-    width: 30px;
-    display: block;
-    margin: 1em 0 0 1em;
-
-}
-.one {
-    width: 30px;
-}
-.two {
-    width: 20px;
-}
-.three {
-    width: 25px;
-}
-.nav:hover div {
-    width: 30px;
-}
-body {
-    background-color: grey;
-}
-=======
     height: 4px;
     background-color: white;
     margin: 5px 0;
@@ -142,7 +129,39 @@ body {
         width: 30px;
     }
     body {
-        background-color: grey;
+        background-color: #637074;
     }
     
->>>>>>> guy
+    footer {
+        margin: 0;
+
+        width: 80%;
+
+        height: 40%;
+
+        border-style: solid;
+
+        display: flex;
+      
+        justify-content: space-between;
+      
+        flex-wrap: wrap;
+      
+        background-color: #8693AB;
+      
+        width: 100%;
+      
+        padding: 40px 35px;
+      }
+      
+      
+      .footer-nav {
+        font-size: 15px;
+        font-style: normal;
+      }
+      
+      footer a {
+        color:#212227 ;
+        font-size: larger;
+        text-decoration: none;
+      }
