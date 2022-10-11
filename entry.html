@@ -1,0 +1,181 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@crangel93 
+crangel93
+/
+online-journal
+Public
+Code
+Issues
+5
+Pull requests
+Discussions
+Actions
+Projects
+1
+Wiki
+Security
+Insights
+Settings
+online-journal/entry.html
+@danpoggetti
+danpoggetti made changes to entry html
+Latest commit cd2cd7f 3 hours ago
+ History
+ 1 contributor
+68 lines (47 sloc)  1.65 KB
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal Entry</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        
+    <a href="#" class="nav">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </a>
+
+        <h1 class="entry-title">Daily Journal</h1>
+
+        <p>Welcome to your Daily Journal Dashboard!</p>
+
+        <button class="entry-button" type="button">New Entry
+        </button>
+
+        <button class="entry-button" id="viewEntries" type="button">View All Entries
+        </button>
+        
+        <button class="entry-button" type="button" id="logout">Logout
+        </button>
+
+        <br><br>
+
+
+        <form id="entry-form">
+            <label for="title">Post Title:</label>
+            <input type="text" name="title" id="title" class="form-input" /><br>
+            <label for="message">Enter your message:</label><br>
+            <textarea name="Message" rows="10" cols="80"></textarea>
+          <br><button id="logInfo" >Post</button><br><br>
+        </form>
+
+    </div>
+
+
+    <footer>
+
+        <div class="resource-list">
+            <ul>
+             
+             <li><a href="./loginTest.html" id="loginTest">Home</a></li>
+                <li><a href="./terms-conditions.html">Terms & Conditions</a></li>
+                <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+
+        </div>
+
+        <h4 class="footer">
+            &copy; 2022 Daily Journal
+        </h4>    
+    
+    </footer>
+<script>
+var logout= document.getElementById("logout");
+logout.addEventListener("click", (e)=>{
+      e.preventDefault()
+
+      window.location="./loggedOut.html";
+})
+
+var viewEntries= document.getElementById("viewEntries");
+viewEntries.addEventListener("click", (e)=>{
+      e.preventDefault()
+
+      window.location="./viewAllEntries.html";
+})
+function goHome(){
+
+
+      window.location="./loginTest.html";
+
+}
+//code to enter a new note
+var logInfo=document.getElementById("logInfo");
+logout.addEventListener("click", (e)=>{
+      e.preventDefault()
+      var departmentName=answer.departmentName;
+          const dbDepartment = mysql.createConnection(
+            {
+              host: 'localhost',
+              // Your MySQL username,
+              user: 'root',
+              // Your MySQL password
+              password: 'Element1!',
+              database: 'login'
+            },
+           
+          );
+            // Create a candidate
+  const sql = `INSERT INTO department (title) 
+  VALUES (?)`;
+const params = [departmentName];
+
+dbDepartment.query(sql, params, (err, result) => {
+if (err) {
+console.log(err);
+}
+
+});
+          //assigning id to next id after last one
+          //var id=sqlIdDepartment +1;
+          //add id to sql
+          //add department to sql
+          console.log('Added '+departmentName+' to the database.')
+          whatWouldYouLike();
+    
+        })}
+
+      
+})
+
+var viewEntries= document.getElementById("viewEntries");
+viewEntries.addEventListener("click", (e)=>{
+      e.preventDefault()
+
+      window.location="./viewAllEntries.html";
+})
+</script>
+</body>
+
+</html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+online-journal/entry.html at develop · crangel93/online-journal
