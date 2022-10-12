@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 const session = require("express-session");
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 80;
 const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
@@ -36,15 +36,33 @@ app.use(express.static(path.join(__dirname, "public")));
 // }));
 //
 // app.use(cors());
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/loginTest.html/'))
-// })
-// app.get('/onlineEntry.html', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/onlineEntry.html/'))
-// })
-// app.get('/onlineEntry', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/onlineEntry.html/'))
-// })
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/loginTest.html/'))
+})
+app.get('/dashboard', (req, res) => {
+    res.sendFile(path.join(__dirname, '/dashboard.html/'))
+})
+app.get('/entry', (req, res) => {
+    res.sendFile(path.join(__dirname, '/entry.html/'))
+})
+app.get('/signup', (req, res) => {
+    res.sendFile(path.join(__dirname, '/signup.html/'))
+})
+app.get('/support', (req, res) => {
+    res.sendFile(path.join(__dirname, '/support.html/'))
+})
+app.get('/terms-conditions', (req, res) => {
+    res.sendFile(path.join(__dirname, '/terms-conditions.html/'))
+})
+app.get('/register', (req, res) => {
+    res.sendFile(path.join(__dirname, '/register.html/'))
+})
+app.get('/viewAllEntries', (req, res) => {
+    res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
+})
+app.get('/privacy-policy', (req, res) => {
+    res.sendFile(path.join(__dirname, '/privacy-policy.html/'))
+})
 // app.get('/viewAllEntries', (req, res) => {
 //     res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
 // })
@@ -60,7 +78,11 @@ app.use(express.static(path.join(__dirname, "public")));
 //
 //
 //
+app.listen(PORT,()=>{
+console.log('App listening on port'+PORT);
+sequelize.sync({force:false});
 
+});
 
 
 
