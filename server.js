@@ -23,11 +23,21 @@ app.get('/', (req, res) => {
 app.get('/onlineEntry.html', (req, res) => {
     res.sendFile(path.join(__dirname, '/onlineEntry.html/'))
 })
-app.get('/onlineEntry', (req, res) => {
-    res.sendFile(path.join(__dirname, '/onlineEntry.html/'))
+app.get('/signup.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '/signup.html/'))
 })
-app.get('/viewAllEntries', (req, res) => {
+app.get('/entry.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '/entry.html/'))
+})
+app.get('/loggedOut.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '/loggedOut.html/'))
+})
+app.get('/viewAllEntries.html', (req, res) => {
     res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
+})
+
+app.get('/loginTest.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '/loginTest.html/'))
 })
 app.use('/api',indexRouter);
 
