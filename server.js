@@ -44,18 +44,18 @@ app.use(express.static(path.join(__dirname, "public")));
 // }));
 // 
 // app.use(cors());
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/loginTest.html/'))
-// })
-// app.get('/onlineEntry.html', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/onlineEntry.html/'))
-// })
-// app.get('/onlineEntry', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/onlineEntry.html/'))
-// })
-// app.get('/viewAllEntries', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
-// })
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/loginTest.html/'))
+})
+app.get('/onlineEntry.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '/onlineEntry.html/'))
+})
+ app.get('/onlineEntry', (req, res) => {
+     res.sendFile(path.join(__dirname, '/onlineEntry.html/'))
+})
+app.get('/viewAllEntries', (req, res) => {
+    res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
+ })
 // app.use('/api',indexRouter);
 // 
 // 
