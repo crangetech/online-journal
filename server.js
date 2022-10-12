@@ -63,6 +63,9 @@ app.get('/viewAllEntries', (req, res) => {
 app.get('/privacy-policy', (req, res) => {
     res.sendFile(path.join(__dirname, '/privacy-policy.html/'))
 })
+app.get('/loggedOut', (req, res) => {
+    res.sendFile(path.join(__dirname, '/loggedOut.html/'))
+})
 // app.get('/viewAllEntries', (req, res) => {
 //     res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
 // })
