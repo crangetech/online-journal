@@ -37,7 +37,35 @@
     </h4>    
 
 </footer>
+<script>
+    var loginBtn = document.getElementById("loginbutton")
+    loginBtn.addEventListener("click", (e)=>{
+      e.preventDefault()
+      var username = document.getElementById("username").value
+      var password = document.getElementById("password").value
+      console.log(username)
+      console.log(password)
+      fetch('./api/login', {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + this.token
+        },
+        body: JSON.stringify({
+          email: username,
+          password: password
+        })
+      }).then((response) => response.json())
+        .then((responseData) => {
+          if(responseData.msg === "Logged in!"){
+            window.location = './entry.html'
+          }
+          console.log(responseData);
+        })
+    })
 
+  </script>
 </body>
 
 </html>
