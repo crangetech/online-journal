@@ -1,6 +1,3 @@
-# online-journal
-An online journal for keeping track of your daily thoughts with easy access to look back at your old entries.
-
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -26,30 +23,26 @@ An online journal for keeping track of your daily thoughts with easy access to l
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Online Journal README</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Welcome to the Online Journal README, a great spot to get to know this project!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/crangel93/online-journal"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://crangel93.github.io/online-journal/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/crangel93/online-journal/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/crangel93/online-journal/issues">Request Feature</a>
   </p>
 </div>
 
@@ -88,19 +81,15 @@ An online journal for keeping track of your daily thoughts with easy access to l
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Our goal was and continues to provide someone a useful create something useful for users, challenge our skills and develop a product we can continue to to develop with future ideas.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+This online journal is a full-stack functioning project that allows a user to keep track of their daily thoughts with easy access to look back at old entries.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+A user can sign up for a free account and use their login crednetials  can log into a dashboard using their credentials. Within the dashboard, a user will have the choice to create a new entry, view all entries or logout.
 
-Use the `BLANK_README.md` to get started.
+If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
@@ -170,15 +159,19 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Click Start My Journal
+- [ ] Enter your information to create a free account
+- [ ] Use your login credentials to open your dashboard
+- [ ] Inside the dashboard, you can select what you want to do:
+    - [ ] Create new entry
+    - [ ] View all entries
+    - [ ] Logout
+- [ ] Creating a new entry will allow you to title and write within the text area
+- [ ] Saving your entry will store it in the view all entries area
+- [ ] You can view your new or previous entries by clicking view all entries
+- [ ] Logout when you are done
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/crangel93/online-journal/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,39 +180,45 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+We strongly feel that contributing well throught and engaging suggestions are instrumental. We are avid learners and want to let you kow any contribution or suggestions are apprecaited.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+If you truly believe you can contribute to making this better, please, please fork the repo and create a pull request. If you do not wish to fork, you can open and create an issue with the tag "enhancement" or "suggestions". We will then be ablet to review it. Lastly, please don't forget to give the project a star!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/newSuggestion`)
+3. Commit your Changes (`git commit -m 'Add some NewSuggestion'`)
+4. Push to the Branch (`git push origin feature/NewSuggestion`)
 5. Open a Pull Request
 
-```html
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-```
+
 
 
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-```html
+Distributed under the MIT License.<br>
+Copyright (c) 2022 Christian Rangel, Dan Poggetti, Guy Wilhite, Jared Saldate
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-```
+
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Christian Rangel - GitHub [https://github.com/crangel93]
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Dan Poggetti - GitHub [https://github.com/danpoggetti]
+
+Guy Wilhite - GitHub [https://github.com/guywil]
+
+Jared Saldate - GitHub [https://github.com/saldatecode]
+
+Project Link: [https://github.com/crangel93/online-journal]
+
+Demo Link: [https://crangel93.github.io/online-journal/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,16 +227,13 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+We want to acknowledge the many great and vast resouces that adided us in creating this online journal.
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
+* [Google](https://www.google.com)
+* [YouTube](https://www.youtube.com)
 * [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [README Template courtesy of othneildrew](https://github.com/othneildrew/Best-README-Template)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -246,13 +242,13 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/crangel93/online-journal/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/crangel93/online-journal/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/crangel93/online-journal/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/crangel93/online-journal/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
