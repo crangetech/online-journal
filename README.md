@@ -81,11 +81,9 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Our goal was and continues to provide someone a useful create something useful for users, challenge our skills and develop a product we can continue to to develop with future ideas.
+We were tasked to create a full-stack functioning website utilizing all of the skills we have learned to date. We created an online journal that allows a user to keep track of their daily thoughts with easy access to look back at old entries.
 
-This online journal is a full-stack functioning project that allows a user to keep track of their daily thoughts with easy access to look back at old entries.
-
-A user can sign up for a free account and use their login crednetials  can log into a dashboard using their credentials. Within the dashboard, a user will have the choice to create a new entry, view all entries or logout.
+A user can sign up for a free account and use their login credentials to view their dashboard. Within the dashboard, a user will have the choices to create a new entry, view all entries or logout.
 
 If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
 
@@ -182,7 +180,7 @@ See the [open issues](https://github.com/crangel93/online-journal/issues) for a 
 
 We strongly feel that contributing well throught and engaging suggestions are instrumental. We are avid learners and want to let you kow any contribution or suggestions are apprecaited.
 
-If you truly believe you can contribute to making this better, please, please fork the repo and create a pull request. If you do not wish to fork, you can open and create an issue with the tag "enhancement" or "suggestions". We will then be ablet to review it. Lastly, please don't forget to give the project a star!
+If you truly believe you can contribute to making this website better, please fork the repo and create a pull request. If you do not wish to fork, you can open and create an issue with the tag "enhancement" or "suggestions". We will then be able to review it and take it into consideration. Lastly, please don't forget to give the project a star!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/newSuggestion`)
@@ -241,13 +239,13 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/crangel93/online-journal?label=CONTRIBUTORS
 [contributors-url]: https://github.com/crangel93/online-journal/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/crangel93/online-journal?style=for-the-badge
 [forks-url]: https://github.com/crangel93/online-journal/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/crangel93/online-journal?style=social
 [stars-url]: https://github.com/crangel93/online-journal/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/crangel93/online-journal
 [issues-url]: https://github.com/crangel93/online-journal/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
