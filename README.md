@@ -89,17 +89,7 @@ A user can sign up for a free account and use their login crednetials  can log i
 
 If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
