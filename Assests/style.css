@@ -1,5 +1,5 @@
 * {
-     padding: 0;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,12 +9,7 @@ a {
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
+
 
 .logo {
     cursor: pointer;
@@ -91,17 +86,6 @@ transition: 0.3s;
 .nav:hover div {
     width: 30px;
 }
-body {
-    background-color: grey;
-}
-
-main form button {
-    color:#393D3F ;
-    border:#62929E ;
-    text-decoration: none;
-
-}
-
 
 .nav div {
     height: 4px;
@@ -134,25 +118,18 @@ main form button {
     
     footer {
         margin: 0;
-
         width: 80%;
-
         height: 40%;
-
         border-style: solid;
-
-        display: flex;
-      
-        justify-content: space-between;
-      
+        display: flex;     
+        justify-content: space-between;      
         flex-wrap: wrap;
-      
         background-color: #8693AB;
-      
         width: 100%;
-      
         padding: 40px 35px;
+        bottom: 0%;
       }
+     
       
       
       .footer-nav {
@@ -172,8 +149,6 @@ main form button {
         text-align: center;
         flex-wrap: wrap;
         flex: auto;
-        
-        
     }
 
     /* Dropdown Button */
@@ -219,24 +194,15 @@ main form button {
   .dropdown:hover .dropbtn {background-color: #62929E;}
 
     .header{
-        
+        justify-content: center;
         margin: 0;
-
         height: 40%;
-
         border-style: solid;
-
-        display: flex;
-      
-        justify-content: space-between;
-      
-        flex-wrap: wrap;
-      
+        flex-wrap: wrap;      
         background-color: #8693AB;
-      
         width: 100%;
-      
-        
+        display: flex;
+        align-items: center;
       }
     
 
@@ -254,25 +220,30 @@ main form button {
 
       }
 
-      form button{
-        width: 20%;
+      .post-title{
+        color: #212227;
+        font-weight: 900;
+        flex: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        
+      }
+
+            .post-button{
         text-align: center;
-        margin: auto;
+        margin: 0 0 10px 45%;
         display: flex;
-        height: 3%;
-        color: black;
-        background-color: #FDFDFF;
-        font-size: 20px;
-        margin: 0 0 0 480px;
+        color:#FDFDFF;
+        background-color: black;
+        justify-content: center;        
+        align-items: center;
+        padding: 6px;
+        font-weight: 900;
+        border: 1px #FDFDFF solid;
+        
+        
       }
 /* terms */
 
-.terms {
-    
-}
-
-.secondary-content{
-
-}
 
 
