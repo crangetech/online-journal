@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
 }
 
 a {
@@ -114,13 +115,19 @@ transition: 0.3s;
     }
     body {
         background-color: #637074;
+        
     }
     
     footer {
         margin: 0;
         width: 80%;
-        height: 40%;
-        border-style: solid;
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        text-align:center;
+        align-items: center;
+        border:1px #212227 solid;
+        padding: 4px;
         display: flex;     
         justify-content: space-between;      
         flex-wrap: wrap;
@@ -135,6 +142,8 @@ transition: 0.3s;
       .footer-nav {
         font-size: 15px;
         font-style: normal;
+        list-style: none;
+        
       }
       
       footer a {
@@ -146,9 +155,11 @@ transition: 0.3s;
       /* Entry */
 
     .entry-title{
-        text-align: center;
+        text-align:left;
         flex-wrap: wrap;
         flex: auto;
+        padding: 4px; 
+        
     }
 
     /* Dropdown Button */
@@ -243,7 +254,73 @@ transition: 0.3s;
         
         
       }
-/* terms */
+/* dashboard */
+
+.entry-button{
+    color: #FDFDFF;
+    background-color: black;
+    border: 1px #FDFDFF solid;
+    margin: 2px;
+    padding: 4px;
+}
 
 
+/* forgot password */
 
+.password-button{
+    flex-wrap: wrap;
+    flex: auto;
+    text-align: center;
+    align-items: center;
+    color: #FDFDFF;
+    background-color: black;
+    border: 1px #FDFDFF solid;
+    margin: 2px 0 10px 0;
+    padding: 4px;
+    font-weight: 600;
+}
+
+#forgot-password-form{
+    margin: 4px;
+}
+ 
+.button-html{
+    color: #FDFDFF;
+    background-color: black;
+    border: 1px #FDFDFF solid;
+    margin: 2px 0 10px 0;
+    padding: 4px;
+    font-weight: 600;
+}
+
+.index{
+    align-items: center;
+    flex: auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.journal-head{
+    font-size: 25px;
+}
+
+.email{
+    color: #212227;
+    font-size: 20px;
+}
+
+.input{
+    font-size: 20px;
+}
+
+.center{
+    justify-content: center;
+    margin: 0;
+    height: 40%;
+    border-style: solid;
+    flex-wrap: wrap;      
+    background-color: #8693AB;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
