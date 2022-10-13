@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+.logo {
+   cursor: pointer;
+   margin: auto;
+   
+   border: 3px;
+   padding: 10px;
+
+}
+
+.logo h1 {
+   font-size: 25px;
+   
+}
+
+.nav-bar {
+   list-style: none;
+   padding: 10px;
+}
+
+.nav-bar li {
+   display: inline-block;
+   padding: 0 10px;
+   font-size: 20px;
+
+}
+
+.nav-bar li a {
+   color: white;
+}
+
+.nav-bar li a:hover {
+   color: black;
+}
+
+.hero-img {
+   background-image: url("./images/daily-journal.jpg");
+   background-repeat: no-repeat;
+   background-position: center top;
+   width: 800 px;
+   height: 900px;
+   background-size: 100% auto;
+   overflow: hidden;
+
+}
+
+.dl {
+   text-align: center;
+}
+
+.nav div {
+height: 4px;
+background-color: white;
+margin: 5px 0;
+border-radius: 25px;
+transition: 0.3s;
+}
+.nav {
+   width: 30px;
+   display: block;
+   margin: 1em 0 0 1em;
+
+}
+
+.one {
+   width: 30px;
+}
+.two {
+   width: 20px;
+}
+.three {
+   width: 25px;
+}
+.nav:hover div {
+   width: 30px;
+}
+body {
+   background-color: grey;
+}
+
+main form button {
+   color:#393D3F ;
+   border:#62929E ;
+   text-decoration: none;
+
+}
+
+
+.nav div {
+   height: 4px;
+   background-color: white;
+   margin: 5px 0;
+   border-radius: 25px;
+   transition: 0.3s;
+   }
+   .nav {
+       width: 30px;
+       display: block;
+       margin: 1em 0 0 1em;
+   
+   }
+   .one {
+       width: 30px;
+   }
+   .two {
+       width: 20px;
+   }
+   .three {
+       width: 25px;
+   }
+   .nav:hover div {
+       width: 30px;
+   }
+   body {
+       background-color: #637074;
+   }
+   
+   footer {
+       margin: 0;
+
+       width: 80%;
+
+       height: 40%;
+
+       border-style: solid;
+
+       display: flex;
+     
+       justify-content: space-between;
+     
+       flex-wrap: wrap;
+     
+       background-color: #8693AB;
+     
+       width: 100%;
+     
+       padding: 40px 35px;
+     }
+     
+     
+     .footer-nav {
+       font-size: 15px;
+       font-style: normal;
+     }
+     
+     footer a {
+       color:#212227 ;
+       font-size: larger;
+       text-decoration: none;
+     }
+
+     /* Entry */
+
+   .entry-title{
+       text-align: center;
+       flex-wrap: wrap;
+       flex: auto;
+       
+       
+   }
+
+   /* Dropdown Button */
+.dropbtn {
+   background-color: #393D3F;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+ }
+ 
+ /* The container <div> - needed to position the dropdown content */
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ /* Dropdown Content (Hidden by Default) */
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ /* Links inside the dropdown */
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ /* Change color of dropdown links on hover */
+ .dropdown-content a:hover {background-color: #ddd;}
+ 
+ /* Show the dropdown menu on hover */
+ .dropdown:hover .dropdown-content {display: block;}
+ 
+ /* Change the background color of the dropdown button when the dropdown content is shown */
+ .dropdown:hover .dropbtn {background-color: #62929E;}
+
+   .header{
+       
+       margin: 0;
+
+       height: 40%;
+
+       border-style: solid;
+
+       display: flex;
+     
+       justify-content: space-between;
+     
+       flex-wrap: wrap;
+     
+       background-color: #8693AB;
+     
+       width: 100%;
+     
+       
+     }
+   
+
+     form label{
+       color: #393D3F;
+     }
+
+     form textarea{
+       width: 90%;
+       border: 4px #212227;
+       margin: 10px 10px 10px 60px;
+       border-style: solid;
+       flex-wrap: wrap;
+       flex: auto;
+
+     }
+
+     form button{
+       width: 20%;
+       text-align: center;
+       margin: auto;
+       display: flex;
+       height: 3%;
+       color: black;
+       background-color: #FDFDFF;
+       font-size: 20px;
+       margin: 0 0 0 480px;
+     }
+/* terms */
+
+
+
+

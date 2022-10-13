@@ -30,8 +30,8 @@
     <label for="phone">Enter your contact number:</label>
     <input type="text" placeholder="Phone number" name="phone" id="phone" class="form-input"/><br>
     <label for="message">Enter your message:</label>
-    <textarea name="Message" rows="8" cols="30"></textarea>
-  <br><button >Submit</button><br><br>
+    <textarea name="Message" id="message" rows="8" cols="30"></textarea>
+  <br><button id="submit" >Submit</button><br><br>
 </form>
 
 </center> 
@@ -40,11 +40,11 @@
 <footer>
     <div class="footer-nav">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./signup.html">Sign Up</a></li>
-            <li><a href="./terms-conditions.html">Terms & Condtions</a></li>
-            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="javascript:dashboardAhref()">Home</a></li>
+            <li><a href="javascript:homeAhref()">Login</a></li>
+            <li><a href="javascript:signupAhref()">Sign Up</a></li>
+            <li><a href="javascript:termsConditionsAhref()">Terms & Conditions</a></li>
+            <li><a href="javascript:privacyAhref()">Privacy Policy</a></li>
         </ul>
 
     </div>
@@ -54,7 +54,70 @@
     </h4>    
 
 </footer>
+<script>
 
+function homeAhref(){
+
+window.location = './';
+
+}
+function signUpAhref(){
+
+window.location = './signup';
+
+}
+function dashboardAhref(){
+
+
+    window.location = './dashboard';
+}
+
+function termsConditionsAhref(){
+
+window.location = './terms-conditions';
+
+}
+
+
+function privacyAhref(){
+
+window.location = './privacy-policy';
+
+}
+function supportAhref(){
+
+window.location = './support';
+
+}
+
+
+var supportBtn=document.getElementById('submit');
+supportBtn.addEventListener("click", (e)=>{
+
+var name=document.getElementById('name').value;
+var email=document.getElementById('email').value;
+var phone=document.getElementById('phone').value;
+var msg=document.getElementById('message').value;
+
+if(name===undefined){
+    alert("Please enter your full name");
+}
+
+if(email===undefined){
+    alert("Please enter your email");
+}
+if(phone===undefined){
+    alert("Please enter your phone number");
+}
+if(msg===undefined){
+    alert("Please enter your message");
+}
+window.open(`mailto:onlinejournal2022@gmail.com?subject=support&body=${msg}+${email}+${phone}`);
+})
+
+
+
+</script>
 </body>
 
 </html>
