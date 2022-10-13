@@ -1,6 +1,3 @@
-# online-journal
-An online journal for keeping track of your daily thoughts with easy access to look back at your old entries.
-
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -26,30 +23,26 @@ An online journal for keeping track of your daily thoughts with easy access to l
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Online Journal README</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Welcome to the Online Journal README, a great spot to get to know this project!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/crangel93/online-journal"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://crangel93.github.io/online-journal/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/crangel93/online-journal/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/crangel93/online-journal/issues">Request Feature</a>
   </p>
 </div>
 
@@ -88,9 +81,11 @@ An online journal for keeping track of your daily thoughts with easy access to l
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This group was assigned with creating a full-stack project. We wanted to create something useful for users, challenge our skills and develop a product we can continue to to develop with future ideas.
+Our goal was and continues to provide someone a useful create something useful for users, challenge our skills and develop a product we can continue to to develop with future ideas.
 
-Enter the Online Journal. This product allows users to create journal entries and view all of their entries. A user can sign up for a free account and then use their login credentials, which will direct them to their dashboard. Inside the dashboard, a user will have the choice to create a new entry, view all entries or logout.
+This online journal is a full-stack functioning project that allows a user to keep track of their daily thoughts with easy access to look back at old entries.
+
+A user can sign up for a free account and use their login crednetials  can log into a dashboard using their credentials. Within the dashboard, a user will have the choice to create a new entry, view all entries or logout.
 
 If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
 
@@ -231,9 +226,9 @@ Guy Wilhite - GitHub [https://github.com/guywil]
 
 Jared Saldate - GitHub [https://github.com/saldatecode]
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
 Project Link: [https://github.com/crangel93/online-journal]
+
+Demo Link: [https://crangel93.github.io/online-journal/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -247,6 +242,7 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 * [Google](https://www.google.com)
 * [YouTube](https://www.youtube.com)
 * [GitHub Pages](https://pages.github.com)
+* [README Template courtesy of othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -256,13 +252,13 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/crangel93/online-journal/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/crangel93/online-journal/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/crangel93/online-journal/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/crangel93/online-journal/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
