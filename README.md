@@ -80,13 +80,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 We were tasked to create a full-stack functioning website utilizing all of the skills we have learned to date. We created an online journal that allows a user to keep track of their daily thoughts with easy access to look back at old entries.
 
 A user can sign up for a free account and use their login credentials to view their dashboard. Within the dashboard, a user will have the choices to create a new entry, view all entries or logout.
 
 If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
+
+![](./images/dasboard.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
