@@ -31,9 +31,9 @@
     <input type="text" placeholder="Email address" name="email" id="email" class="form-input"/></br>
     <label class="logins" for="phone">Enter your contact number:</label>
     <input type="text" placeholder="Phone number" name="phone" id="phone" class="form-input"/><br>
-    <label class="logins" for="message">Enter your message:</label>
-    <textarea name="Message" rows="8" cols="30"></textarea>
-  <br><button class="button-html">Submit</button><br><br>
+    <label class="logins"  >Enter your message:</label>
+    <textarea name="Message" id="message" rows="8" cols="30"></textarea>
+  <br><button class="button-html" id="supportBtn">Submit</button><br><br>
 </form>
 
 </center> 
@@ -57,7 +57,18 @@
 
 </footer>
 <script>
+  var button=document.getElementById('supportBtn');
 
+
+ button.addEventListener("click", (e)=>{
+  var name=document.getElementById('name').value;
+ var email=document.getElementById('email').value;
+  var phone =document.getElementById('phone').value;
+ var message =document.getElementById('message').value;
+      e.preventDefault();
+      window.open(`mailto:onlinejournal2022@gmail.com?subject=${name}needs support&body= Email Address: ${email} Phone: ${phone} Message: ${message}`);
+
+ });
 
     function homeAhref(){
     

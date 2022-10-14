@@ -1,5 +1,5 @@
 const path = require("path");
-const userRoutes=require('./user-routes');
+//const userRoutes=require('./user-routes');
 const express = require("express");
 const session = require("express-session");
 const app = express();
@@ -19,7 +19,7 @@ app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
-app.use(userRoutes);
+//app.use(userRoutes);
 // app.use(require('./controllers/'));
 // const createError=require('http-errors');
 // const express=require('express');
