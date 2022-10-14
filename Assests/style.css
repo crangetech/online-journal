@@ -39,11 +39,13 @@ a {
 }
 
 .nav-bar li a {
-    color: white;
+    color: rgb(249, 247, 247);
+    background-color: black;
+    border: 1px white solid;
 }
 
 .nav-bar li a:hover {
-    color: black;
+    color: rgb(6, 215, 13);
 }
 
 .hero-img {
@@ -476,5 +478,18 @@ transition: 0.3s;
     padding: 0;
     background-color: white;
     border-radius: 6px;
-    
+    color: #060606;
+}
+
+.signup-form{
+    color: #060606;
+    font-size: 20px;
+}
+
+.signup-wrap{
+    border: 1px black solid;
+    background-color: rgba(221, 221, 221, 0.377);
+    margin-right: 1330px;
+    padding: 4px;
+    border-radius: 5px;
 }
