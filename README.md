@@ -249,7 +249,7 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 [issues-shield]: https://img.shields.io/github/issues/crangel93/online-journal
 [issues-url]: https://github.com/crangel93/online-journal/issues
 [license-shield]: https://img.shields.io/github/license/crangel93/online-journal
-[license-url]: https://github.com/othneildrew/online-journal/license.txt
+[license-url]: https://github.com/crangel93/online-journal/license.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
