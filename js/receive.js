@@ -1,13 +1,14 @@
-// Recieves the data and ideally pushes to html
+const { data } = require("jquery")
 
-$.getJSON("php/get.php",function (data) {
-    var items = [];
+$.getJSON("get.php",function (data) {
+    var items = []
     $.each(data,function (key,val) {
-        items.push("<p> id='"+key+"'>"+val.uId+"</p>");
-    });
-    $('<tbody/>',{html:items.join("")}).appendTo("table");
-});
-
-if (data > 0) {
-    greeting = "No Entries Yet";
+        items.push("<tr>")
+        items.push("<td id="+key+"'>"+val.entries+"</td>")
+        items.push("</tr>")
+    })
+    $('<tbody/>',{html:items.join("")}).appendTo("table")
+})
+if(data = 0){
+    document.write(No, Entries, Yet)
 }

@@ -17,6 +17,16 @@
           <a href="#">Logout</a>
         </div>
       </div>
+      <!--Displays current date-->
+      <div id="date">
+        <script>
+          date = new Date()
+          day = date.getDate()
+          month = date.getMonth()
+          year = date.getFullYear()
+          document.getElementById("date").innerHTML = month + "/" + day + "/" + year
+        </script>
+      </div>
 
       <h1 class="entry-title">Daily Journal</h1>
       <br />
