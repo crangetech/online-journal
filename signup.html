@@ -5,18 +5,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../online-journal/Assests/style.css">
     <title>Sign Up</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../online-journal/Assests/style.css">
 </head>
 <body>
 
     <div id="app-container" class="app-container">
         <div class="signup_view_container">
             <div class="signup-form-wrap">
-                <div class="signup-title">
+                <div class="center">
                     <h1>Welcome to Your Daily Journal!</h1>
-                    <h2>Please create a free account.</h2>
                 </div>
+                <h2> Create your free account</h2>
             </div>
 
         </div>
@@ -29,13 +30,12 @@
         <input type="text" name="name" id="name" class="form-input" /><br>
         <label for="email" >Enter your email address:</label>
         <input type="text" name="email" id="email" class="form-input"/></br>
-        <label for="phone">Enter your contact number:</label>
-        <input type="text" name="phone" id="phone" class="form-input"/><br>
+      
         <label for="pasword" >Enter a password:</label>
         <input type="text" name="content" id="password" class="form-input"/><br><br>
         <!-- don't forget to connect the sign up part! -->
         <form action="">
-        <button type="submit" id="signUp">Create My Account!</button>
+        <button class="button-html" type="submit" id="signUp">Create My Account!</button>
         </form><br><br>
     </form>
 
@@ -45,11 +45,11 @@
 
         <div class="resource-list">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./terms.html">Terms</a></li>
-                <li><a href="./policy.html">Policy</a></li>
-                <li><a href="./support.html">Support</a></li>
+                <li><a href="javascript:dashboardAhref()">Home</a></li>
+                <li><a href="javascript:homeAhref()">Login</a></li>
+                <li><a href="javascript:termsConditionsAhref()">Terms-Conditons</a></li>
+                <li><a href="javascript:privacyAhref()">Privacy Policy</a></li>
+                <li><a href="javascript:supportAhref()">Support</a></li>
             </ul>
 
         </div>
@@ -60,46 +60,42 @@
     
     </footer>
 <script>
+
+function dashboardAhref(){
+    window.loacation= "./dashboard";
+  }
+
+  function homeAhref(){
+    
+    window.location = './';
+    
+    }
  var loginBtn = document.getElementById("signUp")
     loginBtn.addEventListener("click", (e)=>{
       e.preventDefault()
-      var name= document.getElementById("name").value;
+   
       var email = document.getElementById("email").value;
       var password = document.getElementById("password").value;
-      var phoneNumber = document.getElementById("phone").value;
+    
      
     
-      console.log(name);
-      console.log(email);
-      console.log(phoneNumber);
-      console.log(password);
     } );
-   fetch('./api/register', {
-        method: "POST",
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        //  'Authorization': 'Bearer ' + this.token
-        },
-        body: JSON.stringify({
-          email: email,
-          password: password,
-          name: name,
-         // phonenumber: phoneNumber
-        })
-      }).then((response) => response.json())
-        .then((responseData) => {
-          if(responseData.msg === "Registered"){
-            window.location = './onlineEntry.html'
-          }
-          console.log(responseData);
-        })
-    
 
+    function privacyAhref(){
 
+window.location = './privacy-policy';
 
+}
+function supportAhref(){
 
+window.location = './support';
 
+}
+function termsConditionsAhref(){
+
+window.location = './terms-conditions';
+
+}
 
 </script>
 </body>

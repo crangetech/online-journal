@@ -4,17 +4,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../online-journal/Assests/style.css"
+    />
     <title>Journal Entry</title>
-    <link rel="stylesheet" type="text/css" href="Assests/style.css" />
   </head>
   <body>
     <div class="header">
       <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
-          <a href="#">View All Entries</a>
-          <a href="#">Home</a>
-          <a href="#">Logout</a>
+          <a href="javascript:viewAllEntriesAhref()">View All Entries</a>
+          <a href="javascript:dashboardAhref()">Home</a>
+          <a href="javascript:loggedOutAhref()">Logout</a>
         </div>
       </div>
       <!--Displays current date-->
@@ -30,8 +34,6 @@
 
       <h1 class="entry-title">Daily Journal</h1>
       <br />
-
-      <p>Welcome to your Daily Journal Dashboard!</p>
     </div>
     <!-- still have to add the view entries link -->
     <!-- <form action=""> -->
@@ -46,24 +48,77 @@
     <br /><br />
     <div class="form">
       <form id="entry-form">
-        <label for="title">Post Title:</label>
+        <label for="title" class="post-title">Post Title:</label>
         <input type="text" name="title" id="title" class="form-input" /><br />
-        <label for="message">Enter your message:</label><br />
+        <label for="message" class="post-title">Enter your message:</label><br />
         <textarea name="Message" rows="10" cols="80"></textarea>
-        <br /><button>Post</button><br /><br />
+        <button class="post-button">Post</button>
       </form>
     </div>
     <footer>
       <div class="resource-list">
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./terms-conditions.html">Terms & Conditions</a></li>
-          <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="./support.html">Support</a></li>
+          <li><a href="javascript:dashboardAhref()" id="ahrefLoginTest">Home</a></li>
+          <li><a href="javascript:termsConditionsAhref()"id="ahrefTermsConditions">Terms & Conditions</a></li>
+          <li><a href="javascript:privacyAhref()" id="ahrefPrivacy">Privacy Policy</a></li>
+          <li><a href="javascript:supportAhref()" id="ahrefSupport">Support</a></li>
         </ul>
       </div>
 
       <h4 class="footer">&copy; 2022 Daily Journal</h4>
     </footer>
+    <script>
+      function homeAhref() {
+        window.location = "./";
+      }
+
+      function termsConditionsAhref() {
+        window.location = "./terms-conditions";
+      }
+
+function homeAhref(){
+
+window.location = './';
+
+}
+
+function termsConditionsAhref(){
+
+window.location = './terms-conditions';
+
+}
+
+function privacyAhref(){
+
+window.location = './privacy-policy';
+
+}
+function supportAhref(){
+
+window.location = './support';
+
+}
+function viewAllEntriesAhref(){
+  window.location = './viewAllEntries';
+}
+function loggedOutAhref(){
+  window.location = './loggedOut';
+}
+function dashboardAhref(){
+  window.location = './dashboard';
+}
+      function privacyAhref() {
+        window.location = "./privacy-policy";
+      }
+      function supportAhref() {
+        window.location = "./support";
+      }
+      function viewAllEntriesAhref() {
+        window.location = "./viewAllEntries";
+      }
+      function loggedOutAhref() {
+        window.location = "./loggedOut";
+      }
+    </script>
   </body>
 </html>

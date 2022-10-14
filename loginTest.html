@@ -11,42 +11,30 @@
 
 <body>
   <center>
-    <h1>
+    <h1 class="center">
       <header>Online Journal Login</header>
     </h1>
     <form id="login_form">
-      <label>Username</label> </br><input type="text" name="username" id="username"></br>
-      <label>Password</label></br> <input type="password" name="password" id="password"></br></br>
-      <button type="submit" id="loginbutton">Login</button>
+      <label class="login-forms">Username</label> </br><input class="input" type="text" name="username" id="username"></br>
+      <label class="login-forms">Password</label></br> <input class="input" type="password" name="password" id="password"></br></br>
+      <button class="button-html" type="submit" id="loginbutton">Login</button>
     </form>
+  </br>
+   <a href="javascript:signUpAhref();">Sign Up!</a>
   </center>
   <script>
-    var loginBtn = document.getElementById("loginbutton")
-    loginBtn.addEventListener("click", (e)=>{
-      e.preventDefault()
-      var username = document.getElementById("username").value
-      var password = document.getElementById("password").value
-      console.log(username)
-      console.log(password)
-      fetch('./api/login', {
-        method: "POST",
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer ' + this.token
-        },
-        body: JSON.stringify({
-          email: username,
-          password: password
-        })
-      }).then((response) => response.json())
-        .then((responseData) => {
-          if(responseData.msg === "Logged in!"){
-            window.location = './entry.html'
-          }
-          console.log(responseData);
-        })
-    })
+
+var button=document.getElementById('loginbutton');
+
+
+button.addEventListener("click", (e)=>{
+  e.preventDefault();
+  window.location = './dashboard';
+});
+ 
+      function signUpAhref(){
+  window.location = './signup';
+}
 
   </script>
 </body>
