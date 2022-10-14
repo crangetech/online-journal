@@ -18,8 +18,8 @@
         <!-- Navigation -->
         <nav>
             <ul class="nav-bar">
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./signup.html">Sign Up</a></li>
+                <li><a href="javascript:homeAhref()">Login</a></li>
+                <li><a href="javascript:signUpAhref()">Sign Up</a></li>
             
             </ul>
 
@@ -452,12 +452,12 @@
     <footer>
         <div class="footer-nav">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./signup.html">Sign Up</a></li>
-                <li><a href="./terms-conditions.html">Terms & Conditions</a></li>
-                <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="./support.html">Support</a></li>
+                <li><a href="javascript:dashboardAhref()">Home</a></li>
+                <li><a href="javascript:homeAhref()">Login</a></li>
+                <li><a href="javascript:signUpAhref()">Sign Up</a></li>
+                <li><a href="javascript:termsConditionsAhref()">Terms & Conditions</a></li>
+                <li><a href="javascript:privacyAhref();">Privacy Policy</a></li>
+                <li><a href="javascript:supportAhref()">Support</a></li>
             </ul>
 
         </div>
@@ -466,6 +466,44 @@
         </h4>    
     
     </footer>
+    <script>
+
+
+      function homeAhref(){
+      
+      window.location = './';
+      
+      }
+      
+      function termsConditionsAhref(){
+      
+      window.location = './terms-conditions';
+      
+      }
+      
+      function privacyAhref(){
+      
+      window.location = './privacy-policy';
+      
+      }
+      function supportAhref(){
+      
+      window.location = './support';
+      
+      }
+      function viewAllEntriesAhref(){
+        window.location = './viewAllEntries';
+      }
+      function loggedOutAhref(){
+        window.location = './loggedOut';
+      }
+      function signUpAhref(){
+        window.location = './signup';
+      }
+      function dashboardAhref(){
+        window.location="./dashboard"
+      }
+          </script>
 
 </body>
 
