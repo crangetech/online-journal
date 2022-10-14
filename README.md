@@ -18,6 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -79,13 +80,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 We were tasked to create a full-stack functioning website utilizing all of the skills we have learned to date. We created an online journal that allows a user to keep track of their daily thoughts with easy access to look back at old entries.
 
 A user can sign up for a free account and use their login credentials to view their dashboard. Within the dashboard, a user will have the choices to create a new entry, view all entries or logout.
 
 If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
+
+![](./images/dasboard)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -231,6 +232,8 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 * [YouTube](https://www.youtube.com)
 * [GitHub Pages](https://pages.github.com)
 * [README Template courtesy of othneildrew](https://github.com/othneildrew/Best-README-Template)
+* [MIT License text](https://mit-license.org/license.txt)
+* [Shields.io for badges](https://shields.io/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -239,16 +242,16 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/crangel93/online-journal?label=CONTRIBUTORS
+[contributors-shield]: https://img.shields.io/github/contributors/crangel93/online-journal?style=for-the-badge
 [contributors-url]: https://github.com/crangel93/online-journal/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/crangel93/online-journal?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/crangel93/online-journal?label=FORKS&style=for-the-badge
 [forks-url]: https://github.com/crangel93/online-journal/network/members
-[stars-shield]: https://img.shields.io/github/stars/crangel93/online-journal?style=social
+[stars-shield]: https://img.shields.io/github/stars/crangel93/online-journal?style=for-the-badge
 [stars-url]: https://github.com/crangel93/online-journal/stargazers
-[issues-shield]: https://img.shields.io/github/issues/crangel93/online-journal
+[issues-shield]: https://img.shields.io/github/issues/crangel93/online-journal?style=for-the-badge
 [issues-url]: https://github.com/crangel93/online-journal/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/crangel/online-journal?style=for-the-badge
+[license-url]: https://github.com/crangel93/online-journal/license.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
