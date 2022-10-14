@@ -32,10 +32,6 @@ app.get('/entry.html', (req, res) => {
 app.get('/loggedOut.html', (req, res) => {
     res.sendFile(path.join(__dirname, '/loggedOut.html/'))
 })
-//Add php start code here
-app.get('/get.php', (req, res) => {
-res.sendFile(path.join(__dirname, '/get.php/'))
-})
 app.get('/viewAllEntries.html', (req, res) => {
     res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
 })
