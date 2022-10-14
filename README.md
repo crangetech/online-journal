@@ -18,6 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -231,6 +232,8 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 * [YouTube](https://www.youtube.com)
 * [GitHub Pages](https://pages.github.com)
 * [README Template courtesy of othneildrew](https://github.com/othneildrew/Best-README-Template)
+* [MIT License text](https://mit-license.org/license.txt)
+* [Shields.io for badges](https://shields.io/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -239,16 +242,16 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/crangel93/online-journal?label=CONTRIBUTORS
+[contributors-shield]: https://img.shields.io/github/contributors/crangel93/online-journal?style=for-the-badge
 [contributors-url]: https://github.com/crangel93/online-journal/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/crangel93/online-journal?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/crangel93/online-journal?label=FORKS&style=for-the-badge
 [forks-url]: https://github.com/crangel93/online-journal/network/members
-[stars-shield]: https://img.shields.io/github/stars/crangel93/online-journal?style=social
+[stars-shield]: https://img.shields.io/github/stars/crangel93/online-journal?style=for-the-badge
 [stars-url]: https://github.com/crangel93/online-journal/stargazers
-[issues-shield]: https://img.shields.io/github/issues/crangel93/online-journal
+[issues-shield]: https://img.shields.io/github/issues/crangel93/online-journal?style=for-the-badge
 [issues-url]: https://github.com/crangel93/online-journal/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/crangel/online-journal?style=for-the-badge
+[license-url]: https://github.com/crangel93/online-journal/license.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
