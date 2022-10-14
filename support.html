@@ -13,9 +13,9 @@
   <h2>Below are answers to some common questions. If you don't see the answer you need, please email support below.</h2>
     <dl class="support-questions">
         <dt>I forgot my password, how can I reset it?</dt>
-            <dd><a href="./forgot-password.html">Reset password</a></dd><br>
+            <dd><a href="javascript:forgotPasswordAhref()">Reset password</a></dd><br>
         <dt>Where do I login again?</dt>
-            <dd><a href="./login.html">Login</a></dd><br>
+            <dd><a href="javascript:homeAhref()">Login</a></dd><br>
         <dt>I no longer want my journal, how can I delete it?</dt>
             <dd>Reach out to support and you'll receive information about deactivating your account.</dd>
     </dl>
@@ -40,11 +40,11 @@
 <footer>
     <div class="footer-nav">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./signup.html">Sign Up</a></li>
-            <li><a href="./terms-conditions.html">Terms & Condtions</a></li>
-            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="javascript:dashboardAhref()">Home</a></li>
+            <li><a href="javascript:homeAhref()">Login</a></li>
+            <li><a href="javascript:signUpAhref()">Sign Up</a></li>
+            <li><a href="javascript:termsConditionsAhref()">Terms & Condtions</a></li>
+            <li><a href="javascript:privacyAhref()">Privacy Policy</a></li>
         </ul>
 
     </div>
@@ -54,7 +54,48 @@
     </h4>    
 
 </footer>
+<script>
 
+
+    function homeAhref(){
+    
+    window.location = './';
+    
+    }
+    
+    function termsConditionsAhref(){
+    
+    window.location = './terms-conditions';
+    
+    }
+    
+    function privacyAhref(){
+    
+    window.location = './privacy-policy';
+    
+    }
+    function supportAhref(){
+    
+    window.location = './support';
+    
+    }
+    function viewAllEntriesAhref(){
+      window.location = './viewAllEntries';
+    }
+    function loggedOutAhref(){
+      window.location = './loggedOut';
+    }
+    function signUpAhref(){
+      window.location = './signup';
+    }
+    //not working
+    function forgotPasword(){
+      window.location = './forgot-password';
+    }
+    function dashboardAhref(){
+      window.location = './dashboard';
+    }
+        </script>
 </body>
 
 </html>

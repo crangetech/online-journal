@@ -1,4 +1,5 @@
 const path = require("path");
+const userRoutes=require('./user-routes');
 const express = require("express");
 const session = require("express-session");
 const app = express();
@@ -18,6 +19,7 @@ app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
+app.use(userRoutes);
 // app.use(require('./controllers/'));
 // const createError=require('http-errors');
 // const express=require('express');
@@ -66,6 +68,13 @@ app.get('/privacy-policy', (req, res) => {
 app.get('/loggedOut', (req, res) => {
     res.sendFile(path.join(__dirname, '/loggedOut.html/'))
 })
+app.get('/signup', (req, res) => {
+    res.sendFile(path.join(__dirname, '/signup.html/'))
+})
+app.get('/forgot-password', (req, res) => {
+    res.sendFile(path.join(__dirname, '/forgot-password.html/'))
+})
+
 // app.get('/viewAllEntries', (req, res) => {
 //     res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
 // })

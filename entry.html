@@ -18,7 +18,7 @@
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
           <a href="javascript:viewAllEntriesAhref()">View All Entries</a>
-          <a href="javascript:homeAhref()">Home</a>
+          <a href="javascript:dashboardAhref()">Home</a>
           <a href="javascript:loggedOutAhref()">Logout</a>
         </div>
       </div>
@@ -51,7 +51,7 @@
     <footer>
       <div class="resource-list">
         <ul>
-          <li><a href="javascript:homeAhref()" id="ahrefLoginTest">Home</a></li>
+          <li><a href="javascript:dashboardAhref()" id="ahrefLoginTest">Home</a></li>
           <li><a href="javascript:termsConditionsAhref()"id="ahrefTermsConditions">Terms & Conditions</a></li>
           <li><a href="javascript:privacyAhref()" id="ahrefPrivacy">Privacy Policy</a></li>
           <li><a href="javascript:supportAhref()" id="ahrefSupport">Support</a></li>
@@ -90,6 +90,9 @@ function viewAllEntriesAhref(){
 }
 function loggedOutAhref(){
   window.location = './loggedOut';
+}
+function dashboardAhref(){
+  window.location = './dashboard';
 }
     </script>
   </body>

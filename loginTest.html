@@ -19,6 +19,8 @@
       <label>Password</label></br> <input type="password" name="password" id="password"></br></br>
       <button type="submit" id="loginbutton">Login</button>
     </form>
+  </br>
+   <a href="javascript:signUpAhref();">Sign Up!</a>
   </center>
   <script>
     var loginBtn = document.getElementById("loginbutton")
@@ -42,11 +44,16 @@
       }).then((response) => response.json())
         .then((responseData) => {
           if(responseData.msg === "Logged in!"){
-            window.location = './entry.html'
+            window.location = './dashboard.html'
           }
           console.log(responseData);
         })
     })
+
+ 
+      function signUpAhref(){
+  window.location = './signup';
+}
 
   </script>
 </body>
