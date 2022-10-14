@@ -15,32 +15,33 @@
 </div>
   <dl class="support-questions">
         <dt>I forgot my password, how can I reset it?</dt>
-            <dd><a href="javascript:forgotPasswordAhref()">Reset password</a></dd><br>
+            <dd><a href="javascript:forgotPasswordAhref()" class="button-suppot">Reset password</a></dd><br>
         <dt>Where do I login again?</dt>
-            <dd><a href="javascript:homeAhref()">Login</a></dd><br>
+            <dd><a href="javascript:homeAhref()" class="button-suppot">Login</a></dd><br>
         <dt>I no longer want my journal, how can I delete it?</dt>
             <dd>Reach out to support and you'll receive information about deactivating your account.</dd>
-    </dl>
-
-  <h3>Didn't find your answer? Message us below!</h3>
-  <p>Please fill out the form and a member of our team will reach out shortly.</p>
-  <form id="support-form">
-    <label class="logins" for="name">Enter your full name:</label>
-    <input type="text" placeholder="Full name" name="name" id="name" class="form-input" /><br>
-    <label class="logins" for="email">Enter your email address:</label>
-    <input type="text" placeholder="Email address" name="email" id="email" class="form-input"/></br>
-    <label class="logins" for="phone">Enter your contact number:</label>
-    <input type="text" placeholder="Phone number" name="phone" id="phone" class="form-input"/><br>
-    <label class="logins" for="message">Enter your message:</label>
-    <textarea name="Message" rows="8" cols="30"></textarea>
-  <br><button class="button-html">Submit</button><br><br>
+          </dl>
+          <div class="support-wrap">
+    <h3 class="support">Didn't find your answer? Message us below!</h3>
+    <p class="support">Please fill out the form and a member of our team will reach out shortly.</p>
+    <form id="support-form">
+      <label class="support" class="logins" for="name">Enter your full name:</label>
+      <input type="text" placeholder="Full name" name="name" id="name" class="form-input" /><br>
+      <label class="support" class="logins" for="email">Enter your email address:</label>
+      <input type="text" placeholder="Email address" name="email" id="email" class="form-input"/></br>
+      <label class="support" class="logins" for="phone">Enter your contact number:</label>
+      <input type="text" placeholder="Phone number" name="phone" id="phone" class="form-input"/><br>
+      <label class="support" class="logins" for="message">Enter your message:</label>
+      <textarea class="textarea" name="Message" rows="8" cols="30"></textarea>
+      <br><button class="button-html">Submit</button><br><br>
+    </div>
 </form>
 
 </center> 
 
 
 <footer>
-    <div class="footer-nav">
+    
         <ul>
             <li><a href="javascript:dashboardAhref()">Home</a></li>
             <li><a href="javascript:homeAhref()">Login</a></li>
@@ -49,9 +50,9 @@
             <li><a href="javascript:privacyAhref()">Privacy Policy</a></li>
         </ul>
 
-    </div>
+   
 
-    <h4 class="footer">
+    <h4>
         &copy; 2022 Daily Journal
     </h4>    
 

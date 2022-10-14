@@ -47,8 +47,6 @@ a {
 }
 
 .hero-img {
-    background-image: url("./images/daily-journal.jpg");
-    background-repeat: no-repeat;
     background-position: center top;
     width: 800 px;
     height: 900px;
@@ -115,16 +113,18 @@ transition: 0.3s;
     }
     body {
         background-color: #637074;
+        background-image: url(./images/daily-journal.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         
     }
     
     footer {
+        position: fixed;
         margin: 0;
-        width: 80%;
         margin: 0;
         bottom: 0;
-        text-align:center;
-        align-items: center;
         border:1px #212227 solid;
         padding: 4px;
         display: flex;     
@@ -132,18 +132,38 @@ transition: 0.3s;
         flex-wrap: wrap;
         background-color: #8693AB;
         width: 100%;
+        color:#212227 ;
+        font-size: larger;
+        text-decoration: none;
       }
      
       
       
       .footer-nav {
+        position: relative;
+        margin: 0;
+        margin: 0;
+        bottom: 0;
+        border:1px #212227 solid;
+        padding: 4px;
+        display: flex;     
+        justify-content: space-between;      
+        flex-wrap: wrap;
+        background-color: #8693AB;
+        width: 100%;
         font-size: 15px;
         font-style: normal;
         list-style: none;
         
       }
       
-      footer a {
+      footer ul li a {
+        color:#212227 ;
+        font-size: larger;
+        text-decoration: none;
+      }
+
+      .footer-nav a {
         color:#212227 ;
         font-size: larger;
         text-decoration: none;
@@ -229,11 +249,12 @@ transition: 0.3s;
       }
 
       .post-title{
-        color: #212227;
+        color: #f0f1f5;
         font-weight: 900;
         flex: auto;
         flex-wrap: wrap;
         align-items: center;
+        margin left: 90px;
         
       }
 
@@ -248,6 +269,7 @@ transition: 0.3s;
         padding: 6px;
         font-weight: 900;
         border: 1px #FDFDFF solid;
+        border-radius: 8px;
         
         
       }
@@ -259,6 +281,7 @@ transition: 0.3s;
     border: 1px #FDFDFF solid;
     margin: 2px;
     padding: 4px;
+    border-radius: 8px;
 }
 
 
@@ -275,6 +298,7 @@ transition: 0.3s;
     margin: 2px 0 10px 0;
     padding: 4px;
     font-weight: 600;
+    border-radius: 8px;
 }
 
 #forgot-password-form{
@@ -284,7 +308,7 @@ transition: 0.3s;
 .button-html{
     color: #FDFDFF;
     background-color: black;
-    
+    border-radius: 8px;
     border: 1px #FDFDFF solid;
     margin: 2px 0 10px 0;
     padding: 4px;
@@ -322,6 +346,24 @@ transition: 0.3s;
     width: 100%;
     display: flex;
     align-items: center;
+}
+.support-questions{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 80px;
+    font-weight: 600;
+}
+
+.support{
+    color: #f0f1f5;
+    font-size: 20px;
+}
+
+.support-wrap{
+    border: 2px black solid;
+    background-color: #212227cb;
+    margin: 0 390px 0 390px;
+    padding: 2px;
 }
 
 .logo{
@@ -393,4 +435,46 @@ transition: 0.3s;
     flex: auto;
     flex-wrap: wrap;
     font-size: 30px;
+}
+
+.forgot-text{
+    color: #060606;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.signup{
+    font-weight: 700;
+    border: 1px black solid;
+    padding: 0;
+    color: #fcfdfd;
+    background-color: #0303037a;
+    border-radius: 8px;
+
+}
+
+.body{
+    background-color: rgba(221, 221, 221, 0.63);
+    border:1px #060606 solid;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+.p{
+    padding: 3px;
+}
+
+.textarea{
+    opacity: 90%;
+    font-size: 20;
+}
+
+.button-suppot{
+    border: 1px black solid;
+    padding: 0;
+    background-color: white;
+    border-radius: 6px;
+    
 }
