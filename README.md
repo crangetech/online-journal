@@ -232,6 +232,7 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 * [GitHub Pages](https://pages.github.com)
 * [README Template courtesy of othneildrew](https://github.com/othneildrew/Best-README-Template)
 * [MIT License text](https://mit-license.org/license.txt)
+* [Shields.io for badges](https://shields.io/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -242,7 +243,7 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/crangel93/online-journal?label=CONTRIBUTORS
 [contributors-url]: https://github.com/crangel93/online-journal/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/crangel93/online-journal?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/crangel93/online-journal
 [forks-url]: https://github.com/crangel93/online-journal/network/members
 [stars-shield]: https://img.shields.io/github/stars/crangel93/online-journal?style=social
 [stars-url]: https://github.com/crangel93/online-journal/stargazers
