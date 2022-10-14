@@ -86,7 +86,7 @@ A user can sign up for a free account and use their login credentials to view th
 
 If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
 
-![](./images/dasboard.png)
+![](./images/dasboard)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
