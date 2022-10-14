@@ -1,20 +1,16 @@
 * {
-     padding: 0;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
 }
 
 a {
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
+
 
 .logo {
     cursor: pointer;
@@ -91,17 +87,6 @@ transition: 0.3s;
 .nav:hover div {
     width: 30px;
 }
-body {
-    background-color: grey;
-}
-
-main form button {
-    color:#393D3F ;
-    border:#62929E ;
-    text-decoration: none;
-
-}
-
 
 .nav div {
     height: 4px;
@@ -130,34 +115,32 @@ main form button {
     }
     body {
         background-color: #637074;
+        
     }
     
     footer {
         margin: 0;
-
         width: 80%;
-
-        height: 40%;
-
-        border-style: solid;
-
-        display: flex;
-      
-        justify-content: space-between;
-      
+        margin: 0;
+        bottom: 0;
+        text-align:center;
+        align-items: center;
+        border:1px #212227 solid;
+        padding: 4px;
+        display: flex;     
+        justify-content: space-between;      
         flex-wrap: wrap;
-      
         background-color: #8693AB;
-      
         width: 100%;
-      
-        padding: 40px 35px;
       }
+     
       
       
       .footer-nav {
         font-size: 15px;
         font-style: normal;
+        list-style: none;
+        
       }
       
       footer a {
@@ -169,10 +152,10 @@ main form button {
       /* Entry */
 
     .entry-title{
-        text-align: center;
+        text-align:left;
         flex-wrap: wrap;
         flex: auto;
-        
+        padding: 4px; 
         
     }
 
@@ -219,24 +202,15 @@ main form button {
   .dropdown:hover .dropbtn {background-color: #62929E;}
 
     .header{
-        
+        justify-content: center;
         margin: 0;
-
         height: 40%;
-
         border-style: solid;
-
-        display: flex;
-      
-        justify-content: space-between;
-      
-        flex-wrap: wrap;
-      
+        flex-wrap: wrap;      
         background-color: #8693AB;
-      
         width: 100%;
-      
-        
+        display: flex;
+        align-items: center;
       }
     
 
@@ -254,25 +228,168 @@ main form button {
 
       }
 
-      form button{
-        width: 20%;
-        text-align: center;
-        margin: auto;
-        display: flex;
-        height: 3%;
-        color: black;
-        background-color: #FDFDFF;
-        font-size: 20px;
-        margin: 0 0 0 480px;
+      .post-title{
+        color: #212227;
+        font-weight: 900;
+        flex: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        
       }
-/* terms */
 
-.terms {
-    
+            .post-button{
+        text-align: center;
+        margin: 0 0 10px 45%;
+        display: flex;
+        color:#FDFDFF;
+        background-color: black;
+        justify-content: center;        
+        align-items: center;
+        padding: 6px;
+        font-weight: 900;
+        border: 1px #FDFDFF solid;
+        
+        
+      }
+/* dashboard */
+
+.entry-button{
+    color: #FDFDFF;
+    background-color: black;
+    border: 1px #FDFDFF solid;
+    margin: 2px;
+    padding: 4px;
 }
 
-.secondary-content{
+
+/* forgot password */
+
+.password-button{
+    flex-wrap: wrap;
+    flex: auto;
+    text-align: center;
+    align-items: center;
+    color: #FDFDFF;
+    background-color: black;
+    border: 1px #FDFDFF solid;
+    margin: 2px 0 10px 0;
+    padding: 4px;
+    font-weight: 600;
+}
+
+#forgot-password-form{
+    margin: 4px;
+}
+ 
+.button-html{
+    color: #FDFDFF;
+    background-color: black;
+    border: 1px #FDFDFF solid;
+    margin: 2px 0 10px 0;
+    padding: 4px;
+    font-weight: 600;
+}
+
+.index{
+    align-items: center;
+    flex: auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.journal-head{
+    font-size: 25px;
+}
+
+.email{
+    color: #212227;
+    font-size: 20px;
+}
+
+.input{
+    font-size: 20px;
+    color: #212227;
+}
+
+.center{
+    justify-content: center;
+    margin: 0;
+    height: 40%;
+    border-style: solid;
+    flex-wrap: wrap;      
+    background-color: #8693AB;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 15%;
+    flex: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.login-forms{
+    color: black;
+    font-size: 20px;
+}
+
+.sign-out{
+    text-align: right;
+    justify-content: right;
+    margin-left: 80%;
+    color: #FDFDFF;
+    background-color: black;
+    border: 1px #FDFDFF solid;
+    padding: 4px;
+    font-weight: 600;
+}
+
+.all{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px ;
+    text-decoration: underline;
+}
+
+.logged-out{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px ;
+    text-decoration: underline;
+}
+
+.logins{
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    padding: 3px;
 
 }
 
+.support-button{
+    background-color: #ddd;
+    border: 1px #060606 solid;
+    margin: 5px 0 10px 0;
+    padding: 2px;
+    font-weight: 600;
+}
 
+.second{
+    padding: 4px;
+    font-size: 15;
+    margin: 10px;
+}
+
+.page-title{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex: auto;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
