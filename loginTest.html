@@ -431,7 +431,7 @@ button.addEventListener("click", (e)=>{
     var password=document.getElementById('password').value.trim();
 
   e.preventDefault();
-  fetch('./controllers/api/user-routes.js', {
+  fetch('./api/user-routes.js', {
         method: "POST",
         body:JSON.stringify({
           email: username,
