@@ -414,7 +414,7 @@ transition: 0.3s;
       <header>Online Journal Login</header>
     </h1>
     <form id="login_form">
-      <label class="login-forms">Username</label> </br><input class="input" type="text" name="username" id="username"></br>
+      <label class="login-forms">Email</label> </br><input class="input" type="text" name="email" id="email"></br>
       <label class="login-forms">Password</label></br> <input class="input" type="password" name="password" id="password"></br></br>
       <button class="button-html" type="submit" id="loginbutton">Login</button>
     </form>
@@ -426,22 +426,36 @@ transition: 0.3s;
 var button=document.getElementById('loginbutton');
 
 
-button.addEventListener("click", (e)=>{
-    var username=document.getElementById('username').value.trim();
+button.addEventListener("click", async (e)=>{
+    var email=document.getElementById('email').value.trim();
     var password=document.getElementById('password').value.trim();
 
   e.preventDefault();
-  fetch('./api/user-routes.js', {
+ console.log(email)
+ console.log(password)
+// fetch("/api/users", {
+//    method: "GET"
+// })
+// .then(data=>data.json())
+// .then(users=>console.log(users))
+async function postData(url='', data={}){
+ const responseData = await fetch(url, {
         method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
         body:JSON.stringify({
-          email: username,
+          email: email,
           password: password
         })
-      }).then((response) => response.json())
-        .then((responseData) => {
-
-            console.log(responseData);
-       if(responseData.msg === "Logged in!"){
+        
+      })
+      return responseData.json()
+    }
+      //.then((response) => response.json())
+        postData('/api/users/login').then((responseData) => {
+             console.log(responseData);
+       if(responseData.message === "Logged in!"){
            window.location = './dashboard.html'
           }
         })

@@ -55,10 +55,10 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.post('/signup', (req, res) => {
+router.post('/register', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   User.create({
-  
+    name:req.body.name,
     email: req.body.email,
     password: req.body.password
   })
@@ -71,11 +71,15 @@ router.post('/signup', (req, res) => {
     });
 });
 
-router.post('/api/login', (req, res) => {
+
+router.post('/users/login', (req, res) => {
   // expects {email: 'lernantino@gmail.com', password: 'password1234'}
+console.log("here")
   User.findOne({
     where: {
-      email: req.body.email
+      email: req.body.email,
+    
+      password:req.body.password
     }
   }).then(dbUserData => {
     if (!dbUserData) {
@@ -83,18 +87,19 @@ router.post('/api/login', (req, res) => {
       return;
     }
 
-    const validPassword = dbUserData.checkPassword(req.body.password);
+  //  const validPassword = dbUserData.checkPassword(req.body.password);
 
-    if (!validPassword) {
-      res.status(400).json({ message: 'Incorrect password!' });
+    // if (!validPassword) {
+    //   res.status(400).json({ message: 'Incorrect password!' });
 
-      return;
-    }
+    //   return;
+    // }
       req.session.save(() => {
       req.session.userId = dbUserData.id;
       req.session.username = dbUserData.username;
       req.session.loggedIn = true;
       res.json({ user: dbUserData, message: "You are now logged In." })
+      res.writeContinue();
     })
     console.log('You are now logged in!')
     res.json({ user: dbUserData, message: 'Logged in!' });

@@ -2,6 +2,7 @@ const router = require('express').Router();
 const User = require('../../models/User.js');
 const entry = require('../../models/entry.js')
 
+
 // get all users
 router.get('/api/users', (req, res) => {
   User.findAll({
