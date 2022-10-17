@@ -1,38 +1,16 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-<<<<<<< HEAD
 [![MIT License][license-shield]][license-url]
-=======
->>>>>>> 9cb846de287ebf52c5b705fe47c1d9e9f12679c1
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="./Assests/images/logo.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">Online Journal README</h3>
 
@@ -83,29 +61,20 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-We were tasked to create a full-stack functioning website utilizing all of the skills we have learned to date. We created an online journal that allows a user to keep track of their daily thoughts with easy access to look back at old entries.
-
-<<<<<<< HEAD
-A user can sign up for a free account and use their login credentials to view their dashboard. Within the dashboard, a user will have the choices to create a new entry, view all entries or logout.
+We were tasked to create a full-stack functioning website utilizing all of the skills we have learned to date. We elected to create an online journal that allows a user to keep track of their daily thoughts with easy access to look back at old entries. We want a user to have the ability to sign up with a free account and then utilize their login credentials to view their dashboard. On the dasboard, a user will have the choices to create a new entry, view all entries or logout.
 
 If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
 
-![](./images/dasboard)
-=======
-We were tasked to create a full-stack functioning website utilizing all of the skills we have learned to date. We created an online journal that allows a user to keep track of their daily thoughts with easy access to look back at old entries.
-
-A user can sign up for a free account and use their login credentials to view their dashboard. Within the dashboard, a user will have the choices to create a new entry, view all entries or logout.
-
-If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
->>>>>>> 9cb846de287ebf52c5b705fe47c1d9e9f12679c1
+![](./Assests/images/homepage-image.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Below are the following technologies and applications utilized to help build the project.<br>
 
+VS Code<br>
 JavaScript<br>
 HTML<br>
 Node<br>
@@ -120,12 +89,11 @@ PHP<br>
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
+Here is how you can setup the project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
   npm install npm@latest -g
@@ -133,20 +101,15 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Below is an example of how you can install the app with GitHub._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone git@github.com:crangel93/online-journal.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -156,9 +119,12 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Here're some screenshots from early ideas of the wireframe. See how we went from initial plans to our full-functioning website.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+![](./Assests/images/wireframe-login.png)
+![](./Assests/images/wireframe-signup.png)
+![](./Assests/images/wireframe-dashboard.png)
+![](./Assests/images/wireframe-all-entries.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,7 +174,8 @@ If you truly believe you can contribute to making this website better, please fo
 ## License
 
 Distributed under the MIT License.<br>
-Copyright (c) 2022 Christian Rangel, Dan Poggetti, Guy Wilhite, Jared Saldate
+Copyright (c) 2022 Christian Rangel, Dan Poggetti, Guy Wilhite, Jared Saldate<br>
+See License.text for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -259,13 +226,8 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 [stars-url]: https://github.com/crangel93/online-journal/stargazers
 [issues-shield]: https://img.shields.io/github/issues/crangel93/online-journal?style=for-the-badge
 [issues-url]: https://github.com/crangel93/online-journal/issues
-[license-shield]: https://img.shields.io/github/license/crangel/online-journal?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/crangel93/online-journal?style=for-the-badge
 [license-url]: https://github.com/crangel93/online-journal/license.txt
-<<<<<<< HEAD
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-=======
->>>>>>> 9cb846de287ebf52c5b705fe47c1d9e9f12679c1
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
