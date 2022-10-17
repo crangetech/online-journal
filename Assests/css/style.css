@@ -115,7 +115,7 @@ transition: 0.3s;
     }
     body {
         background-color: #637074;
-        background-image: url(./images/daily-journal.jpg);
+        background-image: url(../images/daily-journal.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
