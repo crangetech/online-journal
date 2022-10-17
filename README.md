@@ -23,7 +23,10 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+<<<<<<< HEAD
 [![MIT License][license-shield]][license-url]
+=======
+>>>>>>> 9cb846de287ebf52c5b705fe47c1d9e9f12679c1
 
 
 <!-- PROJECT LOGO -->
@@ -82,11 +85,19 @@
 
 We were tasked to create a full-stack functioning website utilizing all of the skills we have learned to date. We created an online journal that allows a user to keep track of their daily thoughts with easy access to look back at old entries.
 
+<<<<<<< HEAD
 A user can sign up for a free account and use their login credentials to view their dashboard. Within the dashboard, a user will have the choices to create a new entry, view all entries or logout.
 
 If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
 
 ![](./images/dasboard)
+=======
+We were tasked to create a full-stack functioning website utilizing all of the skills we have learned to date. We created an online journal that allows a user to keep track of their daily thoughts with easy access to look back at old entries.
+
+A user can sign up for a free account and use their login credentials to view their dashboard. Within the dashboard, a user will have the choices to create a new entry, view all entries or logout.
+
+If the user clicks, "create new entry" they will be directed to the entry page where they can create a title and write their entry in the text area. When the user is done writing, they can click save, which will store the post in the view all entries area. They can then navigate to the view all entries and see their previous journal entries as well as the newly created one.
+>>>>>>> 9cb846de287ebf52c5b705fe47c1d9e9f12679c1
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,14 +106,12 @@ If the user clicks, "create new entry" they will be directed to the entry page w
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+JavaScript<br>
+HTML<br>
+Node<br>
+Express<br>
+Sequelize<br>
+PHP<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -252,8 +261,11 @@ We want to acknowledge the many great and vast resouces that adided us in creati
 [issues-url]: https://github.com/crangel93/online-journal/issues
 [license-shield]: https://img.shields.io/github/license/crangel/online-journal?style=for-the-badge
 [license-url]: https://github.com/crangel93/online-journal/license.txt
+<<<<<<< HEAD
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
+=======
+>>>>>>> 9cb846de287ebf52c5b705fe47c1d9e9f12679c1
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/

@@ -7,5 +7,7 @@ const journalRoutes = require('./journal-routes.js');
 router.use('/', homeRoutes);
 router.use('/dashboard', journalRoutes);
 router.use('/api', apiRoutes);
+router.use('/user-routes.js', userRoutes);
+
 
 module.exports = router;

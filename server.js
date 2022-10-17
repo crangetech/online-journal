@@ -77,6 +77,7 @@ app.get('/forgot-password', (req, res) => {
     res.sendFile(path.join(__dirname, '/forgot-password.html/'))
 })
 
+
 // app.get('/viewAllEntries', (req, res) => {
 //     res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
 // })

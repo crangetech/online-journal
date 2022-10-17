@@ -5,406 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-
-.logo {
-    cursor: pointer;
-    margin: auto;
-    
-    border: 3px;
-    padding: 10px;
-
-}
-
-.logo h1 {
-    font-size: 25px;
-    
-}
-
-.nav-bar {
-    list-style: none;
-    padding: 10px;
-}
-
-.nav-bar li {
-    display: inline-block;
-    padding: 0 10px;
-    font-size: 20px;
-
-}
-
-.nav-bar li a {
-    color: white;
-}
-
-.nav-bar li a:hover {
-    color: black;
-}
-
-.hero-img {
-    background-image: url("./images/daily-journal.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    width: 800 px;
-    height: 900px;
-    background-size: 100% auto;
-    overflow: hidden;
-
-}
-
-.dl {
-    text-align: center;
-}
-
-.nav div {
-height: 4px;
-background-color: white;
-margin: 5px 0;
-border-radius: 25px;
-transition: 0.3s;
-}
-.nav {
-    width: 30px;
-    display: block;
-    margin: 1em 0 0 1em;
-
-}
-
-.one {
-    width: 30px;
-}
-.two {
-    width: 20px;
-}
-.three {
-    width: 25px;
-}
-.nav:hover div {
-    width: 30px;
-}
-
-.nav div {
-    height: 4px;
-    background-color: white;
-    margin: 5px 0;
-    border-radius: 25px;
-    transition: 0.3s;
-    }
-    .nav {
-        width: 30px;
-        display: block;
-        margin: 1em 0 0 1em;
-    
-    }
-    .one {
-        width: 30px;
-    }
-    .two {
-        width: 20px;
-    }
-    .three {
-        width: 25px;
-    }
-    .nav:hover div {
-        width: 30px;
-    }
-    body {
-        background-color: #637074;
-        
-    }
-    
-    footer {
-        margin: 0;
-        width: 80%;
-        margin: 0;
-        bottom: 0;
-        text-align:center;
-        align-items: center;
-        border:1px #212227 solid;
-        padding: 4px;
-        display: flex;     
-        justify-content: space-between;      
-        flex-wrap: wrap;
-        background-color: #8693AB;
-        width: 100%;
-      }
-     
-      
-      
-      .footer-nav {
-        font-size: 15px;
-        font-style: normal;
-        list-style: none;
-        
-      }
-      
-      footer a {
-        color:#212227 ;
-        font-size: larger;
-        text-decoration: none;
-      }
-
-      /* Entry */
-
-    .entry-title{
-        text-align:left;
-        flex-wrap: wrap;
-        flex: auto;
-        padding: 4px; 
-        
-    }
-
-    /* Dropdown Button */
-.dropbtn {
-    background-color: #393D3F;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #62929E;}
-
-    .header{
-        justify-content: center;
-        margin: 0;
-        height: 40%;
-        border-style: solid;
-        flex-wrap: wrap;      
-        background-color: #8693AB;
-        width: 100%;
-        display: flex;
-        align-items: center;
-      }
-    
-
-      form label{
-        color: #393D3F;
-      }
-
-      form textarea{
-        width: 90%;
-        border: 4px #212227;
-        margin: 10px 10px 10px 60px;
-        border-style: solid;
-        flex-wrap: wrap;
-        flex: auto;
-
-      }
-
-      .post-title{
-        color: #212227;
-        font-weight: 900;
-        flex: auto;
-        flex-wrap: wrap;
-        align-items: center;
-        
-      }
-
-            .post-button{
-        text-align: center;
-        margin: 0 0 10px 45%;
-        display: flex;
-        color:#FDFDFF;
-        background-color: black;
-        justify-content: center;        
-        align-items: center;
-        padding: 6px;
-        font-weight: 900;
-        border: 1px #FDFDFF solid;
-        
-        
-      }
-/* dashboard */
-
-.entry-button{
-    color: #FDFDFF;
-    background-color: black;
-    border: 1px #FDFDFF solid;
-    margin: 2px;
-    padding: 4px;
-}
-
-
-/* forgot password */
-
-.password-button{
-    flex-wrap: wrap;
-    flex: auto;
-    text-align: center;
-    align-items: center;
-    color: #FDFDFF;
-    background-color: black;
-    border: 1px #FDFDFF solid;
-    margin: 2px 0 10px 0;
-    padding: 4px;
-    font-weight: 600;
-}
-
-#forgot-password-form{
-    margin: 4px;
-}
- 
-.button-html{
-    color: #FDFDFF;
-    background-color: black;
-    
-    border: 1px #FDFDFF solid;
-    margin: 2px 0 10px 0;
-    padding: 4px;
-    font-weight: 600;
-}
-
-.index{
-    align-items: center;
-    flex: auto;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.journal-head{
-    font-size: 25px;
-}
-
-.email{
-    color: #212227;
-    font-size: 20px;
-}
-
-.input{
-    font-size: 20px;
-    color: #212227;
-}
-
-.center{
-    justify-content: center;
-    margin: 0;
-    height: 40%;
-    border-style: solid;
-    flex-wrap: wrap;      
-    background-color: #8693AB;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.logo{
-    margin-left: 15%;
-    flex: auto;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-}
-
-.login-forms{
-    color: black;
-    font-size: 20px;
-}
-
-.sign-out{
-    text-align: right;
-    justify-content: right;
-    margin-left: 80%;
-    color: #FDFDFF;
-    background-color: black;
-    border: 1px #FDFDFF solid;
-    padding: 4px;
-    font-weight: 600;
-}
-
-.all{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 30px ;
-    text-decoration: underline;
-}
-
-.logged-out{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 30px ;
-    text-decoration: underline;
-}
-
-.logins{
-    text-align: left;
-    font-size: 20px;
-    color: black;
-    padding: 3px;
-
-}
-
-.support-button{
-    background-color: #ddd;
-    border: 1px #060606 solid;
-    margin: 5px 0 10px 0;
-    padding: 2px;
-    font-weight: 600;
-}
-
-.second{
-    padding: 4px;
-    font-size: 15;
-    margin: 10px;
-}
-
-.page-title{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex: auto;
-    flex-wrap: wrap;
-    font-size: 30px;
-}
-
-
-</style>
+<link rel="stylesheet" type="text/css" href="./Assets/style.css" >
   <title>Online Journal</title>
 </head>
 
@@ -414,7 +15,7 @@ transition: 0.3s;
       <header>Online Journal Login</header>
     </h1>
     <form id="login_form">
-      <label class="login-forms">Username</label> </br><input class="input" type="text" name="username" id="username"></br>
+      <label class="login-forms">Email</label> </br><input class="input" type="text" name="email" id="email"></br>
       <label class="login-forms">Password</label></br> <input class="input" type="password" name="password" id="password"></br></br>
       <button class="button-html" type="submit" id="loginbutton">Login</button>
     </form>
@@ -426,22 +27,36 @@ transition: 0.3s;
 var button=document.getElementById('loginbutton');
 
 
-button.addEventListener("click", (e)=>{
-    var username=document.getElementById('username').value.trim();
+button.addEventListener("click", async (e)=>{
+    var email=document.getElementById('email').value.trim();
     var password=document.getElementById('password').value.trim();
 
   e.preventDefault();
-  fetch('./api/user-routes.js', {
+ console.log(email)
+ console.log(password)
+// fetch("/api/users", {
+//    method: "GET"
+// })
+// .then(data=>data.json())
+// .then(users=>console.log(users))
+async function postData(url='', data={}){
+ const responseData = await fetch(url, {
         method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
         body:JSON.stringify({
-          email: username,
+          email: email,
           password: password
         })
-      }).then((response) => response.json())
-        .then((responseData) => {
-
-            console.log(responseData);
-       if(responseData.msg === "Logged in!"){
+        
+      })
+      return responseData.json()
+    }
+      //.then((response) => response.json())
+        postData('/api/users/login').then((responseData) => {
+             console.log(responseData);
+       if(responseData.message === "Logged in!"){
            window.location = './dashboard.html'
           }
         })
