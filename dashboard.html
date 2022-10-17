@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../online-journal/Assests/css/style.css">
+    <title>Welcome to Your Dashboard</title>
+    
+</head>
+<body>
+
+    <div class="header">
+        
+    
+
+        <h1 class="entry-title">Daily Journal</h1>
+
+       
+      
+            <button class="entry-button" type="submit" id="createNewPost">Create New Post</button>
+   
+
+        <!-- still have to add the view entries link -->
+    
+            <button class="entry-button" type="submit" id="viewAllEntries">View All Entries</button>          
+ 
+        
+        <!-- still have to add the logout js-->
+       
+            <button class="entry-button" type="submit" id="logOut">Logout</button>
+        >
+
+
+        <br><br>
+
+
+    <footer>
+
+        <div class="resource-list">
+            <ul>
+               
+                <li><a href="javascript:termsConditionsAhref()"id="ahrefTermsConditions">Terms & Conditions</a></li>
+                <li><a href="javascript:privacyAhref()" id="ahrefPrivacy">Privacy Policy</a></li>
+                <li><a href="javascript:supportAhref()" id="ahrefSupport">Support</a></li>
+            </ul>
+
+        </div>
+
+        <h4 class="footer">
+            &copy; 2022 Daily Journal
+        </h4>    
+    
+    </footer>
+    <script>
+            var logOut= document.getElementById("logOut")
+    logOut.addEventListener("click", (e)=>{
+      e.preventDefault()
+
+            window.location = './loggedOut';
+
+    })
+
+
+
+
+    var viewAllEntries= document.getElementById("viewAllEntries")
+    viewAllEntries.addEventListener("click", (e)=>{
+      e.preventDefault()
+
+            window.location = './viewAllEntries';
+
+    })
+
+    var createNewPost= document.getElementById("createNewPost")
+    createNewPost.addEventListener("click", (e)=>{
+      e.preventDefault()
+
+            window.location = './entry';
+
+    })
+
+    function homeAhref(){
+
+        window.location = './';
+
+    }
+
+    function termsConditionsAhref(){
+
+window.location = './terms-conditions';
+
+}
+
+function privacyAhref(){
+
+window.location = './privacy-policy';
+
+}
+function supportAhref(){
+
+window.location = './support';
+
+}
+    </script>
+
+</body>
+
+</html>

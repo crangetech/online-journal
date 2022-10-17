@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../online-journal/Assests/css/style.css">
+    <style>
+      * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+          font-family: Arial, Helvetica, sans-serif;
+          list-style: none;
+      }
+      
+      a {
+          text-decoration: none;
+      }
+      
+      
+      
+      .logo {
+          cursor: pointer;
+          margin: auto;
+          
+          border: 3px;
+          padding: 10px;
+      
+      }
+      
+      .logo h1 {
+          font-size: 25px;
+          
+      }
+      
+      .nav-bar {
+          list-style: none;
+          padding: 10px;
+      }
+      
+      .nav-bar li {
+          display: inline-block;
+          padding: 0 10px;
+          font-size: 20px;
+      
+      }
+      
+      .nav-bar li a {
+          color: white;
+      }
+      
+      .nav-bar li a:hover {
+          color: black;
+      }
+      
+      .hero-img {
+          background-image: url("./images/daily-journal.jpg");
+          background-repeat: no-repeat;
+          background-position: center top;
+          width: 800 px;
+          height: 900px;
+          background-size: 100% auto;
+          overflow: hidden;
+      
+      }
+      
+      .dl {
+          text-align: center;
+      }
+      
+      .nav div {
+      height: 4px;
+      background-color: white;
+      margin: 5px 0;
+      border-radius: 25px;
+      transition: 0.3s;
+      }
+      .nav {
+          width: 30px;
+          display: block;
+          margin: 1em 0 0 1em;
+      
+      }
+      
+      .one {
+          width: 30px;
+      }
+      .two {
+          width: 20px;
+      }
+      .three {
+          width: 25px;
+      }
+      .nav:hover div {
+          width: 30px;
+      }
+      
+      .nav div {
+          height: 4px;
+          background-color: white;
+          margin: 5px 0;
+          border-radius: 25px;
+          transition: 0.3s;
+          }
+          .nav {
+              width: 30px;
+              display: block;
+              margin: 1em 0 0 1em;
+          
+          }
+          .one {
+              width: 30px;
+          }
+          .two {
+              width: 20px;
+          }
+          .three {
+              width: 25px;
+          }
+          .nav:hover div {
+              width: 30px;
+          }
+          body {
+              background-color: #637074;
+              
+          }
+          
+          footer {
+              margin: 0;
+              width: 80%;
+              margin: 0;
+              bottom: 0;
+              text-align:center;
+              align-items: center;
+              border:1px #212227 solid;
+              padding: 4px;
+              display: flex;     
+              justify-content: space-between;      
+              flex-wrap: wrap;
+              background-color: #8693AB;
+              width: 100%;
+            }
+           
+            
+            
+            .footer-nav {
+              font-size: 15px;
+              font-style: normal;
+              list-style: none;
+              
+            }
+            
+            footer a {
+              color:#212227 ;
+              font-size: larger;
+              text-decoration: none;
+            }
+      
+            /* Entry */
+      
+          .entry-title{
+              text-align:left;
+              flex-wrap: wrap;
+              flex: auto;
+              padding: 4px; 
+              
+          }
+      
+          /* Dropdown Button */
+      .dropbtn {
+          background-color: #393D3F;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {background-color: #62929E;}
+      
+          .header{
+              justify-content: center;
+              margin: 0;
+              height: 40%;
+              border-style: solid;
+              flex-wrap: wrap;      
+              background-color: #8693AB;
+              width: 100%;
+              display: flex;
+              align-items: center;
+            }
+          
+      
+            form label{
+              color: #393D3F;
+            }
+      
+            form textarea{
+              width: 90%;
+              border: 4px #212227;
+              margin: 10px 10px 10px 60px;
+              border-style: solid;
+              flex-wrap: wrap;
+              flex: auto;
+      
+            }
+      
+            .post-title{
+              color: #212227;
+              font-weight: 900;
+              flex: auto;
+              flex-wrap: wrap;
+              align-items: center;
+              
+            }
+      
+                  .post-button{
+              text-align: center;
+              margin: 0 0 10px 45%;
+              display: flex;
+              color:#FDFDFF;
+              background-color: black;
+              justify-content: center;        
+              align-items: center;
+              padding: 6px;
+              font-weight: 900;
+              border: 1px #FDFDFF solid;
+              
+              
+            }
+      /* dashboard */
+      
+      .entry-button{
+          color: #FDFDFF;
+          background-color: black;
+          border: 1px #FDFDFF solid;
+          margin: 2px;
+          padding: 4px;
+      }
+      
+      
+      /* forgot password */
+      
+      .password-button{
+          flex-wrap: wrap;
+          flex: auto;
+          text-align: center;
+          align-items: center;
+          color: #FDFDFF;
+          background-color: black;
+          border: 1px #FDFDFF solid;
+          margin: 2px 0 10px 0;
+          padding: 4px;
+          font-weight: 600;
+      }
+      
+      #forgot-password-form{
+          margin: 4px;
+      }
+       
+      .button-html{
+          color: #FDFDFF;
+          background-color: black;
+          
+          border: 1px #FDFDFF solid;
+          margin: 2px 0 10px 0;
+          padding: 4px;
+          font-weight: 600;
+      }
+      
+      .index{
+          align-items: center;
+          flex: auto;
+          flex-wrap: wrap;
+          text-align: center;
+      }
+      
+      .journal-head{
+          font-size: 25px;
+      }
+      
+      .email{
+          color: #212227;
+          font-size: 20px;
+      }
+      
+      .input{
+          font-size: 20px;
+          color: #212227;
+      }
+      
+      .center{
+          justify-content: center;
+          margin: 0;
+          height: 40%;
+          border-style: solid;
+          flex-wrap: wrap;      
+          background-color: #8693AB;
+          width: 100%;
+          display: flex;
+          align-items: center;
+      }
+      
+      .logo{
+          margin-left: 15%;
+          flex: auto;
+          flex-wrap: wrap;
+          align-items: center;
+          text-align: center;
+      }
+      
+      .login-forms{
+          color: black;
+          font-size: 20px;
+      }
+      
+      .sign-out{
+          text-align: right;
+          justify-content: right;
+          margin-left: 80%;
+          color: #FDFDFF;
+          background-color: black;
+          border: 1px #FDFDFF solid;
+          padding: 4px;
+          font-weight: 600;
+      }
+      
+      .all{
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          font-size: 30px ;
+          text-decoration: underline;
+      }
+      
+      .logged-out{
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          font-size: 30px ;
+          text-decoration: underline;
+      }
+      
+      .logins{
+          text-align: left;
+          font-size: 20px;
+          color: black;
+          padding: 3px;
+      
+      }
+      
+      .support-button{
+          background-color: #ddd;
+          border: 1px #060606 solid;
+          margin: 5px 0 10px 0;
+          padding: 2px;
+          font-weight: 600;
+      }
+      
+      .second{
+          padding: 4px;
+          font-size: 15;
+          margin: 10px;
+      }
+      
+      .page-title{
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          flex: auto;
+          flex-wrap: wrap;
+          font-size: 30px;
+      }
+      
+      
+      </style>
+    <title>Contact Us</title>
+</head>
+<body>
+    <center>
+        <div class="center">
+  <h1> <header>Online Journal Support</header></h1>
+  <h2>Below are answers to some common questions. If you don't see the answer you need, please email support below.</h2>
+</div>
+  <dl class="support-questions">
+        <dt>I forgot my password, how can I reset it?</dt>
+            <dd><a href="javascript:forgotPasswordAhref()" class="button-suppot">Reset password</a></dd><br>
+        <dt>Where do I login again?</dt>
+            <dd><a href="javascript:homeAhref()" class="button-suppot">Login</a></dd><br>
+        <dt>I no longer want my journal, how can I delete it?</dt>
+            <dd>Reach out to support and you'll receive information about deactivating your account.</dd>
+          </dl>
+          <div class="support-wrap">
+    <h3 class="support">Didn't find your answer? Message us below!</h3>
+    <p class="support">Please fill out the form and a member of our team will reach out shortly.</p>
+    <form id="support-form">
+      <label class="support" class="logins" for="name">Enter your full name:</label>
+      <input type="text" placeholder="Full name" name="name" id="name" class="form-input" /><br>
+      <label class="support" class="logins" for="email">Enter your email address:</label>
+      <input type="text" placeholder="Email address" name="email" id="email" class="form-input"/></br>
+      <label class="support" class="logins" for="phone">Enter your contact number:</label>
+      <input type="text" placeholder="Phone number" name="phone" id="phone" class="form-input"/><br>
+      <label class="support" class="logins" for="message">Enter your message:</label>
+      <textarea class="textarea" name="Message" rows="8" cols="30"></textarea>
+      <br><button class="button-html">Submit</button><br><br>
+    </div>
+</form>
+
+</center> 
+
+
+<footer>
+    
+        <ul>
+            <li><a href="javascript:dashboardAhref()">Home</a></li>
+            <li><a href="javascript:homeAhref()">Login</a></li>
+            <li><a href="javascript:signUpAhref()">Sign Up</a></li>
+            <li><a href="javascript:termsConditionsAhref()">Terms & Condtions</a></li>
+            <li><a href="javascript:privacyAhref()">Privacy Policy</a></li>
+        </ul>
+
+   
+
+    <h4>
+        &copy; 2022 Daily Journal
+    </h4>    
+
+</footer>
+<script>
+  var button=document.getElementById('supportBtn');
+
+
+ button.addEventListener("click", (e)=>{
+  var name=document.getElementById('name').value;
+ var email=document.getElementById('email').value;
+  var phone =document.getElementById('phone').value;
+ var message =document.getElementById('message').value;
+      e.preventDefault();
+      window.open(`mailto:onlinejournal2022@gmail.com?subject=${name}needs support&body= Email Address: ${email} Phone: ${phone} Message: ${message}`);
+
+ });
+
+    function homeAhref(){
+    
+    window.location = './';
+    
+    }
+    
+    function termsConditionsAhref(){
+    
+    window.location = './terms-conditions';
+    
+    }
+    
+    function privacyAhref(){
+    
+    window.location = './privacy-policy';
+    
+    }
+    function supportAhref(){
+    
+    window.location = './support';
+    
+    }
+    function viewAllEntriesAhref(){
+      window.location = './viewAllEntries';
+    }
+    function loggedOutAhref(){
+      window.location = './loggedOut';
+    }
+    function signUpAhref(){
+      window.location = './signup';
+    }
+    //not working
+    function forgotPasword(){
+      window.location = './forgot-password';
+    }
+    function dashboardAhref(){
+      window.location = './dashboard';
+    }
+        </script>
+</body>
+
+</html>

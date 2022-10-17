@@ -1,0 +1,495 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.logo {
+    cursor: pointer;
+    margin: auto;
+    
+    border: 3px;
+    padding: 10px;
+
+}
+
+.logo h1 {
+    font-size: 25px;
+    
+}
+
+.nav-bar {
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+
+}
+
+.nav-bar li a {
+    color: rgb(249, 247, 247);
+    background-color: black;
+    border: 1px white solid;
+}
+
+.nav-bar li a:hover {
+    color: rgb(6, 215, 13);
+}
+
+.hero-img {
+    background-position: center top;
+    width: 800 px;
+    height: 900px;
+    background-size: 100% auto;
+    overflow: hidden;
+
+}
+
+.dl {
+    text-align: center;
+}
+
+.nav div {
+height: 4px;
+background-color: white;
+margin: 5px 0;
+border-radius: 25px;
+transition: 0.3s;
+}
+.nav {
+    width: 30px;
+    display: block;
+    margin: 1em 0 0 1em;
+
+}
+
+.one {
+    width: 30px;
+}
+.two {
+    width: 20px;
+}
+.three {
+    width: 25px;
+}
+.nav:hover div {
+    width: 30px;
+}
+
+.nav div {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s;
+    }
+    .nav {
+        width: 30px;
+        display: block;
+        margin: 1em 0 0 1em;
+    
+    }
+    .one {
+        width: 30px;
+    }
+    .two {
+        width: 20px;
+    }
+    .three {
+        width: 25px;
+    }
+    .nav:hover div {
+        width: 30px;
+    }
+    body {
+        background-color: #637074;
+        background-image: url(../images/daily-journal.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+    }
+    
+    footer {
+        position: fixed;
+        margin: 0;
+        margin: 0;
+        bottom: 0;
+        border:1px #212227 solid;
+        padding: 4px;
+        display: flex;     
+        justify-content: space-between;      
+        flex-wrap: wrap;
+        background-color: #8693AB;
+        width: 100%;
+        color:#212227 ;
+        font-size: larger;
+        text-decoration: none;
+      }
+     
+      
+      
+      .footer-nav {
+        position: relative;
+        margin: 0;
+        margin: 0;
+        bottom: 0;
+        border:1px #212227 solid;
+        padding: 4px;
+        display: flex;     
+        justify-content: space-between;      
+        flex-wrap: wrap;
+        background-color: #8693AB;
+        width: 100%;
+        font-size: 15px;
+        font-style: normal;
+        list-style: none;
+        
+      }
+      
+      footer ul li a {
+        color:#212227 ;
+        font-size: larger;
+        text-decoration: none;
+      }
+
+      .footer-nav a {
+        color:#212227 ;
+        font-size: larger;
+        text-decoration: none;
+      }
+
+      /* Entry */
+
+    .entry-title{
+        text-align:left;
+        flex-wrap: wrap;
+        flex: auto;
+        padding: 4px; 
+        
+    }
+
+    /* Dropdown Button */
+.dropbtn {
+    background-color: #393D3F;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #62929E;}
+
+    .header{
+        justify-content: center;
+        margin: 0;
+        height: 40%;
+        border-style: solid;
+        flex-wrap: wrap;      
+        background-color: #8693AB;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+    
+
+      form label{
+        color: #393D3F;
+      }
+
+      form textarea{
+        width: 90%;
+        border: 4px #212227;
+        margin: 10px 10px 10px 60px;
+        border-style: solid;
+        flex-wrap: wrap;
+        flex: auto;
+
+      }
+
+      .post-title{
+        color: #f0f1f5;
+        font-weight: 900;
+        flex: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 90px;
+        
+      }
+
+            .post-button{
+        text-align: center;
+        margin: 0 0 10px 45%;
+        display: flex;
+        color:#FDFDFF;
+        background-color: black;
+        justify-content: center;        
+        align-items: center;
+        padding: 6px;
+        font-weight: 900;
+        border: 1px #FDFDFF solid;
+        border-radius: 8px;
+        
+        
+      }
+/* dashboard */
+
+.entry-button{
+    color: #FDFDFF;
+    background-color: black;
+    border: 1px #FDFDFF solid;
+    margin: 2px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+
+/* forgot password */
+
+.password-button{
+    flex-wrap: wrap;
+    flex: auto;
+    text-align: center;
+    align-items: center;
+    color: #FDFDFF;
+    background-color: black;
+    border: 1px #FDFDFF solid;
+    margin: 2px 0 10px 0;
+    padding: 4px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+#forgot-password-form{
+    margin: 4px;
+}
+ 
+.button-html{
+    color: #FDFDFF;
+    background-color: black;
+    border-radius: 8px;
+    border: 1px #FDFDFF solid;
+    margin: 2px 0 10px 0;
+    padding: 4px;
+    font-weight: 600;
+}
+
+.index{
+    align-items: center;
+    flex: auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.journal-head{
+    font-size: 25px;
+}
+
+.email{
+    color: #212227;
+    font-size: 20px;
+}
+
+.input{
+    font-size: 20px;
+    color: #212227;
+}
+
+.center{
+    justify-content: center;
+    margin: 0;
+    height: 40%;
+    border-style: solid;
+    flex-wrap: wrap;      
+    background-color: #8693AB;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.support-questions{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 80px;
+    font-weight: 600;
+}
+
+.support{
+    color: #f0f1f5;
+    font-size: 20px;
+}
+
+.support-wrap{
+    border: 2px black solid;
+    background-color: #212227cb;
+    margin: 0 390px 0 390px;
+    padding: 2px;
+}
+
+.logo{
+    margin-left: 15%;
+    flex: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.login-forms{
+    color: black;
+    font-size: 20px;
+}
+
+.sign-out{
+    text-align: right;
+    justify-content: right;
+    margin-left: 80%;
+    color: #FDFDFF;
+    background-color: black;
+    border: 1px #FDFDFF solid;
+    padding: 4px;
+    font-weight: 600;
+}
+
+.all{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px ;
+    text-decoration: underline;
+}
+
+.logged-out{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px ;
+    text-decoration: underline;
+}
+
+.logins{
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    padding: 3px;
+
+}
+
+.support-button{
+    background-color: #ddd;
+    border: 1px #060606 solid;
+    margin: 5px 0 10px 0;
+    padding: 2px;
+    font-weight: 600;
+}
+
+.second{
+    padding: 4px;
+    font-size: 15;
+    margin: 10px;
+}
+
+.page-title{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex: auto;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+.forgot-text{
+    color: #060606;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.signup{
+    font-weight: 700;
+    border: 1px black solid;
+    padding: 0;
+    color: #fcfdfd;
+    background-color: #0303037a;
+    border-radius: 8px;
+
+}
+
+.body{
+    background-color: rgba(221, 221, 221, 0.63);
+    border:1px #060606 solid;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+.p{
+    padding: 3px;
+}
+
+.textarea{
+    opacity: 90%;
+    font-size: 20;
+}
+
+.button-suppot{
+    border: 1px black solid;
+    padding: 0;
+    background-color: white;
+    border-radius: 6px;
+    color: #060606;
+}
+
+.signup-form{
+    color: #060606;
+    font-size: 20px;
+}
+
+.signup-wrap{
+    border: 1px black solid;
+    background-color: rgba(221, 221, 221, 0.377);
+    margin-right: 1290px;
+    padding: 4px;
+    border-radius: 5px;
+}

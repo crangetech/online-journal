@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../online-journal/Assests/css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <center>
+  <h1> <header>Online Journal Login</header></h1> 
+  <form id="login_form">
+   <label class="login-forms">Username</label> </br><input class="input" type="text" name="username" id="username"></br>
+  <label class="login-forms">Password</label></br>  <input class="input" type="password" name="password" id="password"></br></br>
+  <button class="button-html" >Login</button><br><br>
+  <a href="./forgot-password.html">Forgot Password?</a>
+</form>
+</center>
+
+
+
+<footer>
+
+    <div class="resource-list">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./signup.html">Sign Up</a></li>
+            <li><a href="./terms-conditions.html">Terms & Conditions</a></li>
+            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="./support.html">Support</a></li>
+        </ul>
+
+    </div>
+
+    <h4 class="footer">
+        &copy; 2022 Daily Journal
+    </h4>    
+
+</footer>
+<script>
+    var loginBtn = document.getElementById("loginbutton")
+    loginBtn.addEventListener("click", (e)=>{
+      e.preventDefault()
+      var username = document.getElementById("username").value
+      var password = document.getElementById("password").value
+      console.log(username)
+      console.log(password)
+      fetch('./api/login', {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + this.token
+        },
+        body: JSON.stringify({
+          email: username,
+          password: password
+        })
+      }).then((response) => response.json())
+        .then((responseData) => {
+          if(responseData.msg === "Logged in!"){
+            window.location = './entry.html'
+          }
+          console.log(responseData);
+        })
+    })
+
+  </script>
+</body>
+
+</html>
