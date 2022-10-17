@@ -1,10 +1,12 @@
 const path = require("path");
-//const userRoutes=require('./user-routes');
+const userRoutes=require('./controlers/api/user-routes.js');
 const express = require("express");
 const session = require("express-session");
 const app = express();
 const PORT = process.env.PORT || 80;
 const sequelize = require("./config/connection");
+
+//app.use(express.static(__dirname + '../online-journal/Assests/style.css'));
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
   secret: "Super secret secret",
@@ -19,7 +21,7 @@ app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
-//app.use(userRoutes);
+app.use("/api",userRoutes);
 // app.use(require('./controllers/'));
 // const createError=require('http-errors');
 // const express=require('express');
