@@ -94,6 +94,7 @@ console.log("here")
 
     //   return;
     // }
+
       req.session.save(() => {
       req.session.userId = dbUserData.id;
       req.session.username = dbUserData.username;

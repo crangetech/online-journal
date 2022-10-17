@@ -61,9 +61,9 @@ app.get('/terms-conditions', (req, res) => {
 app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, '/register.html/'))
 })
-app.get('/viewAllEntries', (req, res) => {
-    res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
-})
+//app.get('/viewAllEntries', (req, res) => {
+ //   res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
+//})
 app.get('/privacy-policy', (req, res) => {
     res.sendFile(path.join(__dirname, '/privacy-policy.html/'))
 })
@@ -76,6 +76,12 @@ app.get('/signup', (req, res) => {
 app.get('/forgot-password', (req, res) => {
     res.sendFile(path.join(__dirname, '/forgot-password.html/'))
 })
+app.get('/viewAllEntries', (req, res) => {
+    res.sendFile(path.join(__dirname, '/viewAllEntries.js/'))
+})
+//app.get('/viewAllEntries', (req, res) => {
+  //  res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
+//})
 
 // app.get('/viewAllEntries', (req, res) => {
 //     res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
