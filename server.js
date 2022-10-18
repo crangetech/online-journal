@@ -3,7 +3,7 @@ const userRoutes=require('./controlers/api/user-routes.js');
 const express = require("express");
 const session = require("express-session");
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3001;
 const sequelize = require("./config/connection");
 
 //app.use(express.static(__dirname + '../online-journal/Assests/style.css'));
