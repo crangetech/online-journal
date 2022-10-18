@@ -1,31 +1,30 @@
 {
-  "name": "loginfunction",
+  "name": "online-journal",
   "version": "1.0.0",
-  "description": "",
+  "description": "<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 --> <a name=\"readme-top\"></a> <!-- *** Thanks for checking out the Best-README-Template. If you have a suggestion *** that would make this better, please fork the repo and create a pull request *** or simply open an issue with the tag \"enhancement\". *** Don't forget to give the project a star! *** Thanks again! Now go create something AMAZING! :D -->",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon server.js"
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crangel93/online-journal.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crangel93/online-journal/issues"
+  },
+  "homepage": "https://github.com/crangel93/online-journal#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.20.1",
     "connect-session-sequelize": "^7.1.5",
-    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
-    "express": "^4.18.1",
+    "express": "^4.18.2",
     "express-session": "^1.17.3",
-    "express-validator": "^6.14.2",
-    "jsonwebtoken": "^8.5.1",
-    "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "node":"^16.17.0",
-    "nodemon": "^2.0.20",
-    "path": "^0.12.7",
-    "sequelize": "^6.25.1"
+    "sequelize": "^6.25.2"
   }
 }
