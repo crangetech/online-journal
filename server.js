@@ -44,37 +44,37 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html/'))
 })
 app.get('/dashboard', (req, res) => {
-    res.sendFile(path.join(__dirname, '/dashboard.html/'))
+    res.sendFile(path.join(__dirname, '/public/dashboard.html/'))
 })
 app.get('/entry', (req, res) => {
-    res.sendFile(path.join(__dirname, '/entry.html/'))
+    res.sendFile(path.join(__dirname, '/public/entry.html/'))
 })
 app.get('/signup', (req, res) => {
-    res.sendFile(path.join(__dirname, '/signup.html/'))
+    res.sendFile(path.join(__dirname, '/public/signup.html/'))
 })
 app.get('/support', (req, res) => {
-    res.sendFile(path.join(__dirname, '/support.html/'))
+    res.sendFile(path.join(__dirname, '/public/support.html/'))
 })
 app.get('/terms-conditions', (req, res) => {
-    res.sendFile(path.join(__dirname, '/terms-conditions.html/'))
+    res.sendFile(path.join(__dirname, '/public/terms-conditions.html/'))
 })
 app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '/register.html/'))
+    res.sendFile(path.join(__dirname, '/public/register.html/'))
 })
 app.get('/viewAllEntries', (req, res) => {
-    res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
+    res.sendFile(path.join(__dirname, '/public/viewAllEntries.html/'))
 })
 app.get('/privacy-policy', (req, res) => {
-    res.sendFile(path.join(__dirname, '/privacy-policy.html/'))
+    res.sendFile(path.join(__dirname, '/public/privacy-policy.html/'))
 })
 app.get('/loggedOut', (req, res) => {
-    res.sendFile(path.join(__dirname, '/loggedOut.html/'))
+    res.sendFile(path.join(__dirname, '/public/loggedOut.html/'))
 })
 app.get('/signup', (req, res) => {
-    res.sendFile(path.join(__dirname, '/signup.html/'))
+    res.sendFile(path.join(__dirname, '/public/signup.html/'))
 })
 app.get('/forgot-password', (req, res) => {
-    res.sendFile(path.join(__dirname, '/forgot-password.html/'))
+    res.sendFile(path.join(__dirname, '/public/forgot-password.html/'))
 })
 
 

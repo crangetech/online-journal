@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../online-journal/Assests/css/style.css">
-    <title>Sign Up</title>
+    <link rel="stylesheet" href="./Assests/css/style.css">
     <style>
         * {
             padding: 0;
@@ -407,117 +405,22 @@
         
         
         </style>
+    <title>Document</title>
 </head>
 <body>
+    <h1 class="logged-out">You are logged out!</h1>
+    <script>
+       
+       
+       
+       
+       setTimeout("logout()", 3000);
 
-    <div id="app-container" class="app-container">
-        <div class="signup_view_container">
-            <div class="signup-form-wrap">
-                <div class="center">
-                    <h1>Welcome to Your Daily Journal!</h1>
-                </div>
-                <h2> Create your free account</h2>
-            </div>
-
-        </div>
-
-
-    </div>
-<div class="signup-wrap">
-    <form id="signup-form">
-        <label class="signup-form" for="name">Enter your full name:</label>
-        <input type="text" name="name" id="name" class="form-input" /><br>
-        <label class="signup-form" for="email" >Enter your email address:</label>
-        <input type="text" name="email" id="email" class="form-input"/></br>
-      
-        <label class="signup-form" for="pasword" >Enter a password:</label>
-        <input type="text" name="content" id="password" class="form-input"/><br><br>
-        <!-- don't forget to connect the sign up part! -->
-        <form action="">
-        <button class="button-html" type="submit" id="signUp">Create My Account!</button>
-        </form><br><br>
-    </form>
-</div>
-
-
-
-    <footer>
-
-        <div class="resource-list">
-            <ul>
-                <li><a href="javascript:dashboardAhref()">Home</a></li>
-                <li><a href="javascript:homeAhref()">Login</a></li>
-                <li><a href="javascript:termsConditionsAhref()">Terms-Conditons</a></li>
-                <li><a href="javascript:privacyAhref()">Privacy Policy</a></li>
-                <li><a href="javascript:supportAhref()">Support</a></li>
-            </ul>
-
-        </div>
-
-        <h4 class="footer">
-            &copy; 2022 Daily Journal
-        </h4>    
-    
-    </footer>
-<script>
-
-function dashboardAhref(){
-    window.loacation= "./dashboard";
-  }
-
-  function homeAhref(){
-    
+function logout(){
     window.location = './';
-    
-    }
- var loginBtn = document.getElementById("signUp")
-    loginBtn.addEventListener("click", (e)=>{
-      e.preventDefault()
-   
-      var email = document.getElementById("email").value;
-      var password = document.getElementById("password").value;
-    
-     
-    
-    } );
-
-    function privacyAhref(){
-
-window.location = './privacy-policy';
-
 }
-function supportAhref(){
 
-window.location = './support';
 
-}
-function termsConditionsAhref(){
-
-window.location = './terms-conditions';
-
-}
-var username=document.getElementById('name').value.trim();
-    var password=document.getElementById('password').value.trim();
-    var email=document.getElementById('email').value.trim();
-
-fetch('/api/user-routes.js', {
-        method: "POST",
-        body:JSON.stringify({
-         
-          email:email,
-          password: password
-        })
-      }).then((response) => response.json())
-        .then((responseData) => {
-
-            console.log(responseData);
-       if(responseData.msg === "Logged in!"){
-           window.location = './dashboard.html'
-          }
-        })
-    
-
-</script>
+    </script>
 </body>
-
 </html>
