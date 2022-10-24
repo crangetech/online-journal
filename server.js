@@ -41,7 +41,7 @@ app.use("/api",userRoutes);
 //
 // app.use(cors());
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/loginTest.html/'))
+    res.sendFile(path.join(__dirname, '/index.html/'))
 })
 app.get('/dashboard', (req, res) => {
     res.sendFile(path.join(__dirname, '/dashboard.html/'))
