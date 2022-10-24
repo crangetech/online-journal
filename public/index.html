@@ -58,7 +58,7 @@ async function postData(url='', data={}){
         postData('/api/users/login').then((responseData) => {
              console.log(responseData);
        if(responseData.message === "Logged in!"){
-           window.location = './dashboard.html'
+           window.location = '/dashboard.html'
        }
         })
     })

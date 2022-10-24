@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html/'))
 })
 app.get('/dashboard', (req, res) => {
-    res.sendFile(path.join(__dirname, './/dashboard.html/'))
+    res.sendFile(path.join(__dirname, '/dashboard.html/'))
 })
 app.get('/entry', (req, res) => {
     res.sendFile(path.join(__dirname, './public/entry.html/'))
